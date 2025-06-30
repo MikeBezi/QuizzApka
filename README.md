@@ -7,6 +7,6 @@
 5. Otwórz przeglądarkę i wejdź na:
    http://localhost:8000
 
-   #Ważne!#
-   Jeżeli nie działa komenda "pip install -r requirements.txt", zainstaluj pythona!
-   https://www.python.org/downloads/
+##Ważne!
+>Jeżeli nie działa komenda "pip install -r requirements.txt", zainstaluj pythona!
+>https://www.python.org/downloads/
