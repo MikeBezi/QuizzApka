@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pytania</title>
+    <link rel="stylesheet" href="inedex.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pytania</h1>
+        <div id="questions"></div>
+        <div id="navButtons"></div>
+        <button id="check">Sprawdź</button>
+        <div id="results"></div>
+    </div>
+    <div class="score-panel" id="scorePanel">
+        <h2>Wynik</h2>
+        <div id="scoreCounter">0 / 30</div>
+        <div id="questionGrid"></div>
+    </div>
+    <div id="quizStartModal" class="modal">
+        <div class="modal-content">
+            <h2>Wybierz liczbę pytań</h2>
+            <div id="quickSelect"></div>
+            <input type="number" id="questionCountInput" min="1" value="30" step="1">
+            <button id="startQuizBtn">Rozpocznij quiz</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
