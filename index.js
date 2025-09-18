@@ -5,6 +5,14 @@ let currentQuestionIndex = 0;
 let userAnswers = [];
 let score = 0;
 let QUESTIONS_PER_QUIZ = 30;
+let quizFinished = false;
+
+// Inicjalizuj zmienne globalne natychmiast
+console.log("Inicjalizacja zmiennych globalnych na początku");
+window.quizFinished = false;
+window.questions = [];
+window.userAnswers = [];
+console.log("window.quizFinished ustawione na:", window.quizFinished);
 
 // Elementy DOM
 const questionsContainer = document.getElementById('questions');
@@ -73,12 +81,20 @@ function startQuiz() {
     userAnswers = [];
     score = 0;
     checkedQuestions = [];
+    quizFinished = false;
+    
+    // Aktualizuj zmienne globalne
+    window.quizFinished = false;
+    window.questions = questions;
+    window.userAnswers = userAnswers;
+    
     updateScore();
     displayQuestion();
 }
 
 // Wyświetl aktualne pytanie
 function displayQuestion() {
+    console.log("displayQuestion() wywołane, quizFinished =", quizFinished);
     if (currentQuestionIndex >= questions.length) {
         showResults();
         return;
@@ -104,9 +120,22 @@ function displayQuestion() {
         } else if (!multi && userAnswer && userAnswer.selectedAnswer === answer.letter) {
             checked = 'checked';
         }
-        let disabled = isChecked ? 'disabled' : '';
+        let disabled = (isChecked || quizFinished) ? 'disabled' : '';
+        
+        // Dodaj klasy dla poprawnych/błędnych odpowiedzi po zakończeniu quizu
+        let answerClass = '';
+        if (quizFinished && userAnswer && userAnswer.isChecked) {
+            if (answer.correct) {
+                answerClass = 'correct-answer';
+            } else if (multi && selectedAnswers.includes(answer.letter)) {
+                answerClass = userAnswer.isCorrect ? 'user-correct' : 'user-incorrect';
+            } else if (!multi && userAnswer.selectedAnswer === answer.letter) {
+                answerClass = userAnswer.isCorrect ? 'user-correct' : 'user-incorrect';
+            }
+        }
+        
         html += `
-            <label class="answer-option">
+            <label class="answer-option ${answerClass}">
                 <input type="${multi ? 'checkbox' : 'radio'}" name="answer" value="${answer.letter}" data-index="${index}" ${checked} ${disabled}>
                 <span class="answer-text">${answer.letter}) ${answer.text}</span>
             </label>
@@ -116,15 +145,40 @@ function displayQuestion() {
             </div>
         </div>
     `;
+    
+    // Dodaj wyjaśnienie po zakończeniu quizu
+    if (quizFinished) {
+        const correctLetters = question.answers.filter(a => a.correct).map(a => a.letter);
+        let isCorrect = false;
+        let userAnswerText = "Brak odpowiedzi";
+        
+        if (userAnswer && userAnswer.isChecked) {
+            isCorrect = userAnswer.isCorrect;
+            if (multi) {
+                userAnswerText = selectedAnswers.length > 0 ? selectedAnswers.join(', ') : "Brak odpowiedzi";
+            } else {
+                userAnswerText = userAnswer.selectedAnswer || "Brak odpowiedzi";
+            }
+        }
+        
+        html += `
+            <div class="answer-explanation ${isCorrect ? 'correct' : 'incorrect'}">
+                <h3>${isCorrect ? '✓ Poprawna odpowiedź!' : '✗ Błędna odpowiedź lub brak odpowiedzi'}</h3>
+                <p>Twoja odpowiedź: ${userAnswerText}</p>
+                <p>Poprawna odpowiedź: ${correctLetters.join(', ')}</p>
+            </div>
+        `;
+    }
+    
     questionsContainer.innerHTML = html;
     updateScore();
     renderNavButtons();
     renderQuestionGrid();
     resultsContainer.innerHTML = '';
-    checkButton.style.display = isChecked ? 'none' : 'block';
+    checkButton.style.display = (isChecked || quizFinished) ? 'none' : 'block';
 
     // Dodaj event listener do zapisywania odpowiedzi po zaznaczeniu
-    if (!isChecked) {
+    if (!isChecked && !quizFinished) {
         if (multi) {
             document.querySelectorAll('input[name="answer"]').forEach(input => {
                 input.addEventListener('change', () => {
@@ -166,9 +220,15 @@ function renderNavButtons() {
     }
     if (currentQuestionIndex < questions.length - 1) {
         navHtml += `<button onclick="goToNext()">Następne</button>`;
-    } else {
+    } else if (!quizFinished) {
         navHtml += `<button onclick="finishQuiz()">Zakończ</button>`;
     }
+    
+    // Po zakończeniu quizu, dodaj przycisk powrotu do wyników
+    if (quizFinished) {
+        navHtml += `<button onclick="showResults()">Pokaż wyniki końcowe</button>`;
+    }
+    
     navButtons.innerHTML = navHtml;
 }
 
@@ -187,6 +247,7 @@ function goToNext() {
 }
 
 function finishQuiz() {
+    console.log("finishQuiz() wywołane");
     // Oceń ostatnie pytanie jeśli nie zostało sprawdzone
     if (currentQuestionIndex === questions.length - 1) {
         const userAnswer = userAnswers.find(a => a.questionIndex === currentQuestionIndex);
@@ -219,13 +280,25 @@ function finishQuiz() {
             }
         }
     }
-    // Oceń wszystkie nieocenione odpowiedzi (pozostałe)
+    // Oceń wszystkie nieocenione odpowiedzi (pozostałe) i dodaj brakujące
     for (let i = 0; i < questions.length; i++) {
-        const userAnswer = userAnswers.find(a => a.questionIndex === i);
-        if (userAnswer && !userAnswer.isChecked) {
-            const question = questions[i];
-            const multi = isMultiSelect(question);
-            const correctLetters = question.answers.filter(a => a.correct).map(a => a.letter);
+        let userAnswer = userAnswers.find(a => a.questionIndex === i);
+        const question = questions[i];
+        const multi = isMultiSelect(question);
+        const correctLetters = question.answers.filter(a => a.correct).map(a => a.letter);
+        
+        if (!userAnswer) {
+            // Brak odpowiedzi - dodaj pustą odpowiedź
+            userAnswer = {
+                questionIndex: i,
+                selectedAnswer: multi ? [] : '',
+                isCorrect: false,
+                correctAnswer: correctLetters,
+                isChecked: true
+            };
+            userAnswers.push(userAnswer);
+        } else if (!userAnswer.isChecked) {
+            // Odpowiedź nieoceniona - oceń ją
             let isCorrect = false;
             if (multi) {
                 isCorrect = arraysEqualNoOrder(userAnswer.selectedAnswer || [], correctLetters);
@@ -238,6 +311,13 @@ function finishQuiz() {
             if (isCorrect) score++;
         }
     }
+    
+    // Oznacz quiz jako zakończony
+    quizFinished = true;
+    window.quizFinished = true; // Aktualizuj globalną zmienną
+    console.log("Quiz zakończony, quizFinished =", quizFinished);
+    
+    // Pokaż wyniki końcowe
     showResults();
 }
 
@@ -267,6 +347,8 @@ window.goToQuestion = function(index) {
     currentQuestionIndex = index;
     displayQuestion();
 }
+
+// Zmienne globalne są już zdefiniowane na końcu pliku
 
 // Zmieniamy checkAnswer, by nadpisywać odpowiedź użytkownika
 function checkAnswer() {
@@ -389,6 +471,7 @@ function showResults() {
     
     resultsHtml += `
             <button onclick="restartQuiz()">Rozpocznij ponownie</button>
+            <button onclick="reviewQuestions()">Przejrzyj pytania</button>
         </div>
     `;
     
@@ -404,12 +487,20 @@ function restartQuiz() {
     // Po ponownym wyborze liczby pytań quiz wystartuje przez startQuizBtn.onclick
 }
 
+// Przejrzyj pytania po zakończeniu
+function reviewQuestions() {
+    currentQuestionIndex = 0;
+    displayQuestion();
+}
+
 // Aktualizuj licznik punktów
 function updateScore() {
     if (scoreCounter) {
         scoreCounter.textContent = `${score} / ${questions.length}`;
     }
 }
+
+// Zmienne globalne są już zdefiniowane na początku pliku
 
 // Event listeners
 checkButton.addEventListener('click', checkAnswer);
