@@ -86,8 +86,8 @@ def preview_excel_structure(excel_file_path):
 
 if __name__ == "__main__":
     # Przykład użycia
-    excel_file = "pytania.xlsx"  # Zmień na nazwę swojego pliku
-    json_file = "questions.json"
+    excel_file = "az900_big.xlsx"  # Zmień na nazwę swojego pliku
+    json_file = "az900_big.json"
     
     # Sprawdź czy plik Excel istnieje
     if os.path.exists(excel_file):

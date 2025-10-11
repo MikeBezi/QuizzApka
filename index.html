@@ -21,7 +21,18 @@
     </div>
     <div id="quizStartModal" class="modal">
         <div class="modal-content">
-            <h2>Wybierz liczbę pytań</h2>
+            <h2>Konfiguracja quizu</h2>
+            
+            <div class="quiz-selection">
+                <label for="quizSelect">Wybierz zestaw pytań:</label>
+                <select id="quizSelect">
+                    <option value="questions.json">Pytania podstawowe</option>
+                    <option value="az900.json">AZ-900 (Azure Fundamentals)</option>
+                    <option value="sc900.json">SC-900 (Security, Compliance)</option>
+                </select>
+            </div>
+            
+            <h3>Liczba pytań</h3>
             <div id="quickSelect"></div>
             <input type="number" id="questionCountInput" min="1" value="30" step="1">
             <button id="startQuizBtn">Rozpocznij quiz</button>

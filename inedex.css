@@ -325,7 +325,46 @@ h1 {
     padding: 40px 30px 30px 30px;
     box-shadow: 0 8px 32px rgba(102, 126, 234, 0.15);
     text-align: center;
-    min-width: 320px;
+    min-width: 400px;
+}
+.modal-content h3 {
+    color: #667eea;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+.quiz-selection {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #f8f9ff;
+    border-radius: 10px;
+}
+.quiz-selection label {
+    display: block;
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+#quizSelect {
+    width: 100%;
+    font-size: 1.1em;
+    padding: 12px 16px;
+    border-radius: 8px;
+    border: 2px solid #667eea;
+    background: white;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+#quizSelect:hover {
+    border-color: #764ba2;
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
+}
+#quizSelect:focus {
+    outline: none;
+    border-color: #764ba2;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
 }
 #questionCountInput {
     font-size: 1.5em;

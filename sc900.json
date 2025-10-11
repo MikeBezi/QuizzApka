@@ -1,0 +1,4760 @@
+{
+  "questions": [
+    {
+      "question": "Conditional access policies always enforce the user of multi-factor authentication (MFA).",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": true
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Conditional access policies can be used to block access to an application based on the location of the user.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Conditional access policies only affect users who have Azure Active Directory (Azure AD)-joined devices.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": true
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "[...] is used to identify, hold, and export electronic information that might be used in an investigation.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Customer Lockbox.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Data loss prevention (DLP).",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "eDiscovery.",
+          "correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Resource lock.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Microsoft Defender for Endpoint can protect Android devices.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Microsoft Defender for Endpoint can protect Azure virtual machines that run Windows 10.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Microsoft Defender for Endpoint can protect Microsoft SharePoint Online sites and content from viruses.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": true
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "What feature in Microsoft Defender for Endpoint provides the first line of defense against cyberthreats by reducing the attack surface?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Automated remediation.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Automated investigation.",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Advanced hunting.",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Network protection.",
+          "correct": true
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which score measures an organization’s progress in completing actions that help reduce risks associated to data protection and regulatory standards?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Microsoft Secure Score.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Productivity Score.",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Secure score in Azure Security Center.",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Compliance score.",
+          "correct": true
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "You can add a resource lock to an Azure subscription.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "You can add only one resource lock to an Azure resource.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": true
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "You can delete a resource group containing resources that have resources locks.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": true
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Azure Defender can detect vulnerabilities and threats for Azure Storage.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Cloud Security Posture Management (CSPM) is available for all Azure subscriptions.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Azure Security Center can evaluate the security of workloads deployed to Azure or on-premises.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "In the shared responsibility model for an Azure deployment, what is Microsoft solely responsible for managing?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "The management of mobile devices.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "The permissions for the user data stored in Azure.",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "The creation and management of user accounts.",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "The management of the physical hardware.",
+          "correct": true
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which Microsoft 365 feature can you use to restrict communication and the sharing of information between members of two departments at your organization?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Sensitivity label policies.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Customer Lockbox.",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Information Barriers.",
+          "correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Privileged Access Management (PAM).",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "You can use [...] in the Microsoft 365 security center to identify devices that are affected by an alert.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "classifications.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "incidents.",
+          "correct": true
+        },
+        {
+          "letter": "C",
+          "text": "policies.",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "secure score.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "When users sign in to the Azure portal, they are first [...].",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "assigned permissions.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "authenticated.",
+          "correct": true
+        },
+        {
+          "letter": "C",
+          "text": "authorized.",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "resolved.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "You plan to implement a security strategy and place multiple layers of defense throughout a network infrastructure. Which security methodology does this represent?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Threat modeling.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Identity as the security perimeter.",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Defense in depth.",
+          "correct": true
+        },
+        {
+          "letter": "D",
+          "text": "The shared responsibility model.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Compliance Manager assesses compliance data [...] for an organization.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "continually.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "monthly.",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "on-demand.",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "quarterly.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "What should you use in the Microsoft 365 security center to view security trends and track the protection status of identities?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Attack simulator.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Reports.",
+          "correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Hunting.",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Incidents.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Digitally signing a document requires a private key.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Verifying the authenticity of a digitally signed document requires the public key of the signer.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Verifying the authenticity of a digitally signed document requires the private key of the signer.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": true
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "In the Microsoft Cloud Adoption Framework for Azure, which two phases are addressed before the Ready phase? (multi)",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Plan.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Manage.",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Adopt.",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Govern.",
+          "correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Define Strategy.",
+          "correct": true
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "What can you use to provide a user with a two-hour window to complete an administrative task in Azure?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Azure Active Directory (Azure AD) Privileged Identity Management (PIM).",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Azure Multi-Factor Authentication (MFA).",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Azure Active Directory (Azure AD) Identity Protection.",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "conditional access policies.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Applying system updates increases an organization's secure score in Azure Security Center.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "The secure score in Azure Security Center can evaluate resources across multiple Azure subscriptions.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Enabling multi-factor authentication (MFA) increases an organization's secure score in Azure Security Center.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "[...] enables collaboration with business partners from external organizations such as suppliers, partners, and vendors. External users appear as guest in the directory.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Active Directory Domain Services (AD DS).",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Active Directory forest trust.",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Azure Active Directory (Azure AD) business-to-business (B2B).",
+          "correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Azure Active Directory business-to-consumer B2C (Azure AD B2C).",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which Microsoft portal provides information about how Microsoft manages privacy, compliance, and security?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Microsoft Service Trust Portal.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Compliance Manager.",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Microsoft 365 Compliance Center.",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Microsoft Support.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "What can you use to scan email attachments and forward the attachments to recipients only if the attachments are free from malware?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Microsoft Defender for Office 365.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Microsoft Defender Antivirus.",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Microsoft Defender for Identity.",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Microsoft Defender for Endpoint.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "What is the purpose of Azure Active Directory (Azure AD) Password Protection?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "To control how often users must change their passwords.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "To identify devices to which users can sign in without using multi-factor authentication (MFA).",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "To encrypt a password by using globally recognized encryption standards.",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "To prevent users from using specific words in their passwords.",
+          "correct": true
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Network security groups (NSGs) can deny inbound traffic from the internet.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Network security groups (NSGs) can deny outbound traffic to the internet.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Network security groups (NSGs) can filter traffic based on IP address, protocol, and port.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "What is an example of encryption at rest?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Encrypting communications by using a site-to-site VPN.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Encrypting a virtual machine disk.",
+          "correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Accessing a website by using an encrypted HTTPS connection.",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Sending an encrypted email.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Azure DDoS Protection Standard can be used to protect [...].",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Azure Active Directory (Azure AD) applications.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Azure Active Directory (Azure AD) users.",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "resource groups.",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "virtual networks.",
+          "correct": true
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which three authentication methods can be used by Azure Multi-Factor Authentication (MFA)? (multi)",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Text message (SMS).",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Microsoft Authenticator app.",
+          "correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Email verification.",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Phone call.",
+          "correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Security question.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which Microsoft 365 Compliance Center feature can you use to identify all the documents on a Microsoft SharePoint Online site that contain a specific key word?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Audit.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Compliance Manager.",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Content Search.",
+          "correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Alerts.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "You can use the insider risk management solution to detect phising scams.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": true
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "You can access the insider risk management solution from the Microsoft 365 Compliance Center.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "You can use the insider risk management solution to detect data leaks by unhappy employees.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "What are two capabilities of Microsoft Defender for Endpoint?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Automated investigation and remediation.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Transport encryption.",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Shadow IT detection.",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Attack surface reduction.",
+          "correct": true
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Microsoft Intune can be used to manage Android devices.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Microsoft Intune can be used to provision Azure subscriptions.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": true
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Microsoft Intune can be used to manage organization-owned devices and personal devices.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Compliance Manager tracks only customer-managed controls.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": true
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Compliance Manager provides predefined templates for creating assessments.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Compliance Manager can help you asses whether data adheres to specific data protection standards.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which two tasks can you implement by using data loss prevention (DLP) policies in Microsoft 365? (multi)",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Display policy tips to users who are about to violate your organization’s policies.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Enable disk encryption on endpoints.",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Protect documents in Microsoft OneDrive that contain sensitive information.",
+          "correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Apply security baselines to devices.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "[...] requires additional verification, such as a verification code sent to a mobile phone.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Multi-factor authentication (MFA).",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Pass-through authentication.",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Password writeback.",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Single sign-on (SSO).",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "With Advanced Audit in Microsoft 365, you can identify when email items were accessed.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Advenced Audit in Microsoft 365 supports the same retention period of audit logs as core auditing.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": true
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Advanced Audit in Microsoft 365 allocates customer-dedicated bandwidth for accessing audit data.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "[...] provides a central location for managing information protection, information governance, and data loss prevention (DLP) policies.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Azure Defender.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Microsoft Purview compliance portal.",
+          "correct": true
+        },
+        {
+          "letter": "C",
+          "text": "The Microsoft 365 security center.",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Microsoft Endpoint Manager.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which Microsoft 365 compliance feature can you use to encrypt content automatically based on specific conditions?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Content Search.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Sensitivity labels.",
+          "correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Retention policies.",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "eDiscovery.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "In Azure Sentinel, you can automate common tasks by using [...].",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "deep investigation tools.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "hunting search-and-query tools.",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "playbooks.",
+          "correct": true
+        },
+        {
+          "letter": "D",
+          "text": "workbooks.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "All Azure active Directory (Azure AD) license editions include the same features.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": true
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "You can manage an Azure Active Directory (Azure AD) tenant by using the Azure portal.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "You must deploy Azure virtual machines to host an Azure Active Directory (Azure AD) tenant.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": true
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Azure Active Directory (Azure AD) is [...] used for authentication and authorization.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "an extended detection and response (XDR) system.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "an identity provider.",
+          "correct": true
+        },
+        {
+          "letter": "C",
+          "text": "a management group.",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "a security information and event management (SIEM) system.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "[...] can be used to provide Microsoft Support Engineers with access to an organization's data stored in Microsoft Exchange Online, SharePoint Online, and OneDrive for Business.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Customer Lockbox.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Information barriers.",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Privileged Access Management (PAM).",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Sensitivity labels.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "What do you use to provide real-time integration between Azure Sentinel and another security source?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Azure AD Connect.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Log Analytics workspace.",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Azure Information Protection.",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Data connector.",
+          "correct": true
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "You can create custom roles in Azure Active Directory (Azure AD).",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Global administrator is a role in Azure Active Directory (Azure AD).",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "An Azure Active Directory (Azure AD) user can be assigned only one role.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": true
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Azure Active Directory (Azure AD) Identity Protection can add users to groups based on the users' risk level.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": true
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Azure Active Directory (Azure AD) Identity Protection can detect whether user credentials were leaked to the public.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Azure Active Directory (Azure AD) Identity Protection can be used to invoke Multi-Factor Authentication based on a user's risk level.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which feature provides the extended detection and response (XDR) capability of Azure Sentinel?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Integration with the Microsoft 365 Compliance Center.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Support for threat hunting.",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Integration with Microsoft 365 Defender.",
+          "correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Support for Azure Monitor Workbooks.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which Azure Active Directory (Azure AD) feature can you use to provide just-in-time (JIT) access to manage Azure resources?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Conditional access policies.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Azure AD Identity Protection.",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Azure AD Privileged Identity Management (PIM).",
+          "correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Authentication method policies.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "In software as a service (SaaS), applying service packs to applications is the responsibility of the organization.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": true
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "In infrastructure as a service (IaaS), managing the physical network is the responsibility of the cloud provider.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "In all Azure Cloud deployment types, managing the security of information and data is the responsibility of the organization.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Applications registered in Azure Active Directory (Azure AD) are associated automatically to a [...].",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "guest account.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "managed identity.",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "service principal.",
+          "correct": true
+        },
+        {
+          "letter": "D",
+          "text": "user account.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "[...] is a cloud-native security information and event management (SIEM) and security orchestration automated response (SOAR) solution used to provide a single solution for alert detection, threat visibility, proactive hunting, and threat response.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Azure Advisor.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Azure Bastion.",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Azure Monitor.",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Azure Sentinel.",
+          "correct": true
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "[...] a file makes the data in the file readable and usable to viewers that have the appropriate key.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Archiving.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Compressing.",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Deduplicating.",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Encrypting.",
+          "correct": true
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Sensitivity labels can be used to encrypt documents.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Sensitivity labels can add headers and footers to documents.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Sensitivity labels can apply watermarks to emails.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "[...] is a cloud-based solution that leverages on-premises Active Directory signals to identify, detect, and investigate advanced threats.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Microsoft Cloud App Security.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Microsoft Defender for Endpoint.",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Microsoft Defender for Identity.",
+          "correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Microsoft Defender for Office 365.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Azure Policy supports automatic remediation.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Azure Policy can be used to ensure that new resources adhere to corporate standards.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Compliance evaluation in Azure Policy occurs only when a target resource is created or modified.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": true
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Federation is used to establish [...] between organizations.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "multi-factor authentication (MFA).",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "a trust relationship.",
+          "correct": true
+        },
+        {
+          "letter": "C",
+          "text": "user account synchronization.",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "a VPN connection.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "[...] provides Network Address Translation (NAT) services.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Azure Bastion.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Azure Firewall.",
+          "correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Network Security Group (NSG).",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "[...] provides secure and seamless Remote Desktop connectivity to Azure virtual machines.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Azure Bastion.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Azure Firewall.",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Network Security Group (NSG).",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "[...] provides provides traffic filtering that can be applied to specific network interfaces on a virtual network.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Azure Bastion.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Azure Firewall.",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Network Security Group (NSG).",
+          "correct": true
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Conditional access policies can use the device state as a signal.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Conditional access policies apply before first-factor authentication is complete.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": true
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Conditional access policies can trigger multi-factor authentication (MFA) if a user attempts to access a specific application.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Azure AD Identity Protection can add users to groups based on the users' risk level.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": true
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Azure AD Identity Protection can detect whether user credentials were leaked to the public.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Azure AD Identity Protection can be used to invoke Multi-Factor Authentication based on the users' risk level.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Security defaults require an Azure Active Directory (Azure AD) Premium license.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": true
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Security defaults can be enabled for a single Azure Active Directory (Azure AD) user.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": true
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "When Security defaults are enabled, all administrators must use multi-factor authentication (MFA).",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Control is a key privacy principle of Microsoft.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Transparency is a key principle of Microsoft.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Shared responsibility a key principle of Microsoft.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": true
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "What should you use to ensure that the members of an Azure Active Directory group use multi-factor authentication (MFA) when they sign in?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Azure Active Directory (Azure AD) Identity Protection.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "A conditional access policy.",
+          "correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Azure role-based access control (Azure RBAC).",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Azure Active Directory (Azure AD) Privileged Identity Management (PIM).",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Microsoft Defender for Cloud can detect vulnerabilities and threats for Azure Storage.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Microsoft Defender for Cloud can evaluate the security of workloads deployed to Azure or on-premises.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "[...] provides benchmark recommendations and guidance for protecting Azure services.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Azure Application Insights.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Azure Network Watcher.",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Log Analytics workspaces.",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Security baselines for Azure.",
+          "correct": true
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which two Azure resources can a network security group (NSG) be associated with? (multi)",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Network interface.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Azure App Service web app.",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Virtual network.",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Virtual network subnet.",
+          "correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Resource group.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Azure AD Connect can be used to implement hybrid identity.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Hybrid identity requires the implementation of two Microsoft 365 tenants.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": true
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Hybrid identity refers to the synchronization of Active Directory Domain Services (AD DS) and Azure Active Directory (Azure AD).",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Match the types of compliance score actions to the appropriate tasks. [...] Use encryption to protect data at rest.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Corrective.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Detective.",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Preventative.",
+          "correct": true
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Match the types of compliance score actions to the appropriate tasks. [...] Actively monitor systems to identify irregularities that might represent risks.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Corrective.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Detective.",
+          "correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Preventative.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "You can use the insider risk management solution to detect phishing scams.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": true
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "To which type of resource can Azure Bastion provide secure access?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Azure Files.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Azure SQL Managed Instances.",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Azure virtual machines.",
+          "correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Azure App Service.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Conditional access policies always enforce the use of multi-factor authentication (MFA).",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": true
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "What can you protect by using the information protection solution in the Microsoft 365 Compliance Center?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Computers from zero-day exploits.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Users from phishing attempts.",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Files from malware and viruses.",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Sensitive data from being exposed to unauthorized users.",
+          "correct": true
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Microsoft Sentinel [...] use Azure Logic Apps to automate and orchestrate responses to alerts.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "analytic rules.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "hunting queries.",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "playbooks.",
+          "correct": true
+        },
+        {
+          "letter": "D",
+          "text": "workbooks.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "What are three uses of Microsoft Cloud App Security?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Discover and control the use of shadow IT.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Provide secure connections to Azure virtual machines.",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Protect sensitive information hosted anywhere in the cloud.",
+          "correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Provide pass-through authentication to on-premises applications.",
+          "correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Prevent data leaks to noncompliant apps and limit access to regulated data.",
+          "correct": true
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Azure Active Directory (Azure AD) is deployed to an on premises environment.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": true
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Azure Active Directory (Azure AD) is provided as part of a Microsoft 365 subscription.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Azure Active Directory (Azure AD) is an identity and access management service.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which service should you use to view your Azure secure score? (multi)",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Alerts.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Application Insights.",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Policy.",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Azure AD Connect Health.",
+          "correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Security Center (Microsoft Defender for Cloud).",
+          "correct": true
+        },
+        {
+          "letter": "F",
+          "text": "Security Center.",
+          "correct": true
+        },
+        {
+          "letter": "G",
+          "text": "Advisor.",
+          "correct": false
+        },
+        {
+          "letter": "H",
+          "text": "Monitor.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which two types of resources can be protected by using Azure Firewall?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Azure virtual machines.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Azure Active Directory (Azure AD) users.",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Microsoft Exchange Online inboxes.",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Azure virtual networks.",
+          "correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Microsoft SharePoint Online sites.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "What can you use to provide threat detection for Azure SQL Managed Instance?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Microsoft Secure Score.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Application security groups.",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Microsoft Defender for Cloud.",
+          "correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Azure Defender.",
+          "correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Azure Bastion.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "[...] can use conditional access policies to control sessions in real time.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Azure Active Directory (Azure AD) Privileged Identity Management (PIM).",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Microsoft Defender for Cloud.",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Microsoft Sentinel.",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Microsoft Defender for Cloud Apps.",
+          "correct": true
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Compliance Manager can be directly accessed from the [...].",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Microsoft 365 admin center.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Microsoft 365 Defender portal.",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Microsoft 365 Purview.",
+          "correct": true
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Compliance Manager can be directly accessed from the [...].",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Microsoft 365 admin center.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Microsoft 365 Defender portal.",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Microsoft 365 Compliance Center.",
+          "correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Microsoft Support portal.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "In a Core eDiscovery workflow, what should you do before you can search for content?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Create an eDiscovery hold.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Run Express Analysis.",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Configure attorney-client privilege detection.",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Export and download results.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Microsoft Secure Score in the Microsoft 365 security center can provide o recommendations for Microsoft Cloud App Security.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "From the Microsoft 365 security center, you can view how your Microsoft Secure Score compares to the score of organizations like yours.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Microsoft Secure Score in the Microsoft 365 security center gives you points if you address the improvement action by using a third-party application or software.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which Microsoft 365 feature can you use to restrict users from sending email messages that contain lists of customers and their associated credit card numbers?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Retention policies.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Data loss prevention (DLP) policies.",
+          "correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Conditional access policies.",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Information barriers.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which Azure Active Directory (Azure AD) feature can you use to evaluate group membership and automatically remove users that no longer require membership in a group?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Access reviews.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Managed identities.",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Conditional access policies.",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Azure AD Identity Protection.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which Microsoft portal provides information about how Microsoft cloud services comply with regulatory standard, such as International Organization for Standardization (ISO)?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Microsoft Endpoint Manager admin center.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Azure Cost Management + Billing.",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Microsoft Service Trust Portal.",
+          "correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Azure Active Directory admin center.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "What can you use to provision Azure resources across multiple subscriptions in a consistent manner?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Microsoft Defender for Cloud.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Azure Blueprints.",
+          "correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Microsoft Sentinel.",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Azure Policy.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "When you enable security defaults in Azure Active Directory (Azure AD), [...] will be enabled for all Azure AD users.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Azure AD Identity Protection.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Azure AD Privileged Identity Management (PIM).",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Multi-factor authentication (MFA).",
+          "correct": true
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "[...] provides best practices from Microsoft employees, partners, and customers, including tools and guidance to assist in an Azure deployment.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Azure Blueprints.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Azure Policy.",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "The Microsoft Cloud Adoption Framework for Azure.",
+          "correct": true
+        },
+        {
+          "letter": "D",
+          "text": "A resource lock.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "You can manage Microsoft Intune by using the",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Azure Active Directory admin center.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Microsoft 365 Compliance Center.",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Microsoft 365 Defender portal.",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Microsoft Endpoint Manager admin center.",
+          "correct": true
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Verify explicitly is one of the guiding principles of Zero Trust.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Assume breach is one of the guiding principles of Zero Trust.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "The Zero Trust security model assumes that a firewall secures the internal network from external threats.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": true
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "[...] is the process of identifying whether a signed-in user can access a specific resource.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Authentication.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Authorization.",
+          "correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Federation.",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Single sign-on (SSO).",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which three statements accurately describe the guiding principles of Zero Trust? (multi)",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Define the perimeter by physical locations.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Use identity as the primary security boundary.",
+          "correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Always verify the permissions of a user explicitly.",
+          "correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Always assume that the user system can be breached.",
+          "correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Use the network as the primary security boundary.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "A higher Microsoft Secure Score means a lower identified risk level in the Microsoft 365 tenant.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Microsoft Secure Score measures progress in completing actions based on controls that include key regulations and standards for data protection and governance.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": true
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "In a hybrid identity model, what can you use to sync identities between Active Directory Domain Services (AD DS) and Azure Active Directory (Azure AD)?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Active Directory Federation Services (AD FS).",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Microsoft Sentinel.",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Azure AD Connect.",
+          "correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Azure AD Privileged Identity Management (PIM).",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "With Windows Hello for Business, a user's biometric data used for authentication",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "is stored on an external device.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "is stored on a local device only.",
+          "correct": true
+        },
+        {
+          "letter": "C",
+          "text": "is stored in Azure Active Directory (Azure AD).",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "is replicated to all the devices designated by the user.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Microsoft Defender for Identity can identify advanced threats from [...] signals.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Azure Active Directory (Azure AD).",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Azure AD Connect.",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "on-premises Active Directory Domain Services (AD DS).",
+          "correct": true
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which three authentication methods does Windows Hello for Business support?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Fingerprint.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Facial recognition.",
+          "correct": true
+        },
+        {
+          "letter": "C",
+          "text": "PIN.",
+          "correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Email verification.",
+          "correct": false
+        },
+        {
+          "letter": "E",
+          "text": "security question.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "You have an Azure subscription. You need to implement approval-based, time-bound role activation. What should you use?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Windows Hello for Business.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Azure Active Directory (Azure AD) Identity Protection.",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Access reviews in Azure Active Directory (Azure AD).",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Azure Active Directory (Azure AD) Privileged Identity Management (PIM).",
+          "correct": true
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Global administrators are exempt from conditional access policies.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": true
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "A conditional access policy can add users to Azure Active Directory (Azure AD) roles.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": true
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Conditional access policies can force the use of multi-factor authentication (MFA) to access cloud apps.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "When security defaults are enabled for an Azure Active Directory (Azure AD) tenant, which two requirements are enforced? (multi)",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "All users must authenticate from a registered device.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Administrators must always use Azure Multi-Factor Authentication (MFA).",
+          "correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Azure Multi-Factor Authentication (MFA) registration is required for all users.",
+          "correct": true
+        },
+        {
+          "letter": "D",
+          "text": "All users must authenticate by using passwordless sign-in.",
+          "correct": false
+        },
+        {
+          "letter": "E",
+          "text": "All users must authenticate by using Windows Hello.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which type of identity is created when you register an application with Active Directory (Azure AD)?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "User account.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "User-assigned managed identity.",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "System-assigned managed identity.",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Service principal.",
+          "correct": true
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which three tasks can be performed by using Azure Active Directory (Azure AD) Identity Protection? (multi)",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Configure external access for partner organizations.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Export risk detection to third-party utilities.",
+          "correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Automate the detection and remediation of identity based-risks.",
+          "correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Investigate risks that relate to user authentication.",
+          "correct": true
+        },
+        {
+          "letter": "E",
+          "text": "Create and automatically assign sensitivity labels to data.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "When using multi-factor authentication (MFA), a password is considered something you [...].",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "are.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "have.",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "know.",
+          "correct": true
+        },
+        {
+          "letter": "D",
+          "text": "share.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Windows Hello for Business can use the Microsoft Authenticator app as an authentication method.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": true
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Windows Hello for Business can use a PIN code as an authentication method.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Windows Hello for Business authentication information syncs across all the devices registered by a user.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": true
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "An Azure resource can use a system-assigned [...] to access Azure services.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Azure Active Directory (Azure AD) joined device.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "managed identity.",
+          "correct": true
+        },
+        {
+          "letter": "C",
+          "text": "service principal.",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "user identity.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "You can use [...] in the Microsoft 365 security center to view an aggregation of alerts that relate to the same attack.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Reports.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Hunting.",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Attack simulator.",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Incidents.",
+          "correct": true
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "You can create one Azure Bastion per virtual network.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Azure Bastion provides secure user connections by using RDP.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "In Microsoft Sentinel, you can automate common tasks by using [...]",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "deep investigation tools.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "hunting search-and-query tools.",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "playbooks.",
+          "correct": true
+        },
+        {
+          "letter": "D",
+          "text": "workbooks.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which Azure Active Directory (Azure AD) feature can you use to restrict Microsoft Intune-managed devices from accessing corporate resources?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Network security groups (NSGs).",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Azure AD Privileged Identity Management (PIM).",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Conditional access policies.",
+          "correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Resource locks.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "What should you use in the Microsoft 365 Defender portal to view security trends and track the protection status of identities?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Attack simulator.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Reports.",
+          "correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Hunting.",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Incidents.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "You have a Microsoft 365 E3 subscription. You plan to audit user activity by using the unified audit log and Basic Audit. For how long will the audit records be retained?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "15 days.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "30 days.",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "90 days.",
+          "correct": true
+        },
+        {
+          "letter": "D",
+          "text": "180 days.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "In the Microsoft 365 Defender portal, an incident is a collection of correlated [...].",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "alerts.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "events.",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "vulnerabilities.",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Microsoft Secure Score improvement actions.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "You need to connect to an Azure virtual machine by using Azure Bastion. What should you use?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "PowerShell remoting.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Azure portal.",
+          "correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Remote Desktop Connection client.",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "SSH client.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which service includes the Attack simulation training feature?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Microsoft Defender for Cloud Apps.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Microsoft Defender for Identity.",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Microsoft Defender for SQL.",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Microsoft Defender for Office 365.",
+          "correct": true
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which type of alert can you manage from the Microsoft 365 Defender portal?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Microsoft Defender for Storage.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Microsoft Defender for SQL.",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Microsoft Defender for Endpoint.",
+          "correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Microsoft Defender for IoT.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Microsoft Sentinel data connectors support only Microsoft services.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": true
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "You can use Azure Monitor workbooks to monitor data collected by Microsoft Sentinel.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Hunting provides you with the ability to identify security threats before an alert is triggered.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "What is a use case for implementing information barrier policies in Microsoft 365?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Restrict unauthenticated access to Microsoft 365.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Restrict Microsoft Teams chats between certain groups within an organization.",
+          "correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Restrict Microsoft Exchange Online email between certain groups within an organization.",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Restrict data sharing to external email recipients.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "What can you use to deploy Azure resources across multiple subscriptions in a consistent manner?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Microsoft Defender for Cloud.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Azure Blueprints.",
+          "correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Microsoft Sentinel.",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Azure Policy.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Azure Defender provides security alerts and advanced threat protection for virtual machines, SQL databases, containers, web applications, your network, your storage, and more",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Cloud security posture management (CSPM) is available for free to all Azure users.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Azure Security Center is a unified infrastructure security management system that strengthens the security posture of your data centers, and provides advanced threat protection across your hybrid workloads in the cloud – whether they’re in Azure or not – as well as on premises.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Azure Active Directory (Azure AD) is a cloud-based user identity and authentication service.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Microsoft 365 uses Azure Active Directory (Azure AD). Azure Active Directory (Azure AD) is included with your Microsoft 365 subscription.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Azure Bastion provides a secure connection to an Azure virtual machine by using the Azure portal.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Applying system updates increases an organization's secure score in Microsoft Defender for Cloud.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "The secure score in Microsoft Defender for Cloud can evaluate resources across multiple Azure subscriptions.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Enabling multi-factor authentication (MFA) increases an organization's secure score in Microsoft Defender for Cloud.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which score measures an organization's progress in completing actions that help reduce risks associated to data protection and regulatory standards?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Microsoft Secure Score.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "AProductivity Score.",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Secure score in Azure Security Center.",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Compliance score.",
+          "correct": true
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "You are evaluating the compliance score in Compliance Manager. Match the compliance score action subcategories to the appropriate actions. [...] Encrypt data at rest.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Corrective.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Detective.",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Preventative.",
+          "correct": true
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "You are evaluating the compliance score in Compliance Manager. Match the compliance score action subcategories to the appropriate actions. [...] Perform a system access audit.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Corrective.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Detective.",
+          "correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Preventative.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "You are evaluating the compliance score in Compliance Manager. Match the compliance score action subcategories to the appropriate actions. [...] Make configuration changes in response to a security incident.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Corrective.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Detective.",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Preventative.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Conditional access policies can be applied to global administrators.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Conditional access policies are evaluated before a user is authenticated.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": true
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Conditional access policies can use a device platform, such as Android or iOS, as a signal.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which two cards are available in the Microsoft 365 Defender portal? (multi)",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Users at risk.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Compliance Score.",
+          "correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Devices at risk.",
+          "correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Service Health.",
+          "correct": false
+        },
+        {
+          "letter": "E",
+          "text": "User Management.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Microsoft 365 Endpoint data loss prevention (Endpoint DLP) can be used on which operating systems?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Windows 10 and iOS only.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Windows 10 and Android only.",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Windows 10, Android, and iOS.",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Windows 10 only.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which compliance feature should you use to identify documents that are employee resumes?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Pre-trained classifiers.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Content explorer.",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Activity explorer.",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "eDiscovery.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "What are customers responsible for when evaluating security in a software as a service (SaaS) cloud services model?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Applications.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Network controls.",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Operating systems.",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Accounts and identities.",
+          "correct": true
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "You need to create a data loss prevention (DLP) policy. What should you use?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Microsoft 365 admin center.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Microsoft Endpoint Manager admin center.",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Microsoft 365 Defender portal.",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Microsoft 365 Compliance center.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "What is an assessment in Compliance Manager?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Grouping of controls from a specific regulation, standard or policy.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Recommended guidance to help organizations align with their corporate standards.",
+          "correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Dictionary of words that are not allowed in company documents.",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Policy initiative that includes multiple policies.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "You need to keep a copy of all files in a Microsoft SharePoint site for one year, even if users delete the files from the site. What should you apply to the site?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Data loss prevention (DLP) policy.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Retention policy.",
+          "correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Insider risk policy.",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Sensitivity label policy.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "What can you use to view the Microsoft Secure Score for Devices?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Microsoft Defender for Cloud Apps.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Microsoft Defender for Endpoint.",
+          "correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Microsoft Defender for Identity.",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Microsoft Defender for Office 365.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Match the Microsoft 365 insider risk management workflow step to the appropriate task. [...] Review and filter alerts.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Triage.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Investigate.",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Action.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Match the Microsoft 365 insider risk management workflow step to the appropriate task. [...] Create cases in the Case dashboard.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Triage.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Investigate.",
+          "correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Action.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Match the Microsoft 365 insider risk management workflow step to the appropriate task. [...] Send a reminder of corporate policies to users.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Triage.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Investigate.",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Action.",
+          "correct": true
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Users can apply sensitivity labels manually.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Multiple sensitivity labels can be applied to the same file.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": true
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "A sensitivity label can apply a watermark to a Microsoft Word document.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "You can use Advanced Audit in Micrdsoft 365 to view billing details.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": true
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "You can use Advanced Auditin Microsoft 365 to view the contents of an email message.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": true
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "You can use Advanced Auditin Microsoft 365 to view when a user sees the search bar in Outlook on the web to search for message in a mailbox.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Yes.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "No.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "What can you specify in Microsoft 365 sensitivity labels?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "How long files must be preserved.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "When to archive an email message.",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Which watermark to add to files.",
+          "correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Where to store files.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which encryption method uses a public key and private key pair?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "symmetric encryption",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "shared key",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "hashing",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "asymmetric encryption",
+          "correct": true
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which identity provider allows you to use software as a service (SaaS) and platform as a service (PaaS) in Azure with the least administrative effort?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Active Directory",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Microsoft Entra ID",
+          "correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Google identity",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Facebook identity",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "What is a benefit of single sign-on (SSO) compared to other authentication methods?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Users can authenticate once and access resources anywhere.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Users can access resources in their domain.",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Devices can be shared by multiple users.",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Devices can only be used by a single user.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which Azure feature provides network-level filtering, application-level filtering, and outbound SNAT?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "distributed denial-of-service (DDoS) protection",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Azure Firewall",
+          "correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Azure Web Application Firewall (WAF)",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Azure Bastion hosts",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "What Azure feature provides application-level filtering and SSL termination?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "distributed denial-of-service (DDoS) protection",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Azure Firewall",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Azure Web Application Firewall (WAF)",
+          "correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Azure Bastion hosts",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Select the answer that correctly completes the sentence.To implement network segmentation in Azure, you must create [answer choice].",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "bastion hosts",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "firewalls",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "security groups",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "virtual networks",
+          "correct": true
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which Azure service provides centralized protection of web apps from common exploits and vulnerabilities?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Azure Key Vault",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Azure Web Application Firewall (WAF)",
+          "correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Microsoft Entra ID Protection",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Microsoft Defender for Cloud",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which service enables you to continually assess the security posture, identify threats, and harden resources in Azure and on-premises workloads?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Azure Firewall",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Microsoft Defender for Cloud",
+          "correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Azure Web Application Firewall (WAF)",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Microsoft Purview",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which two industry frameworks are used in the Azure Security Benchmark? Each correct answer presents a complete solution",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Center for Internet Security (CIS)",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Federal Information Processing Standard (FIPS) 140",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Open Web Application Security Project (OWASP)",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "National Institute of Standards and Technology (NIST)",
+          "correct": true
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which two features are part of Microsoft Defender for Clouds enhanced security? Each correct answer presents a complete solution.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "endpoint detection and response (EDR)",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "vulnerability scanning for SQL resources",
+          "correct": true
+        },
+        {
+          "letter": "C",
+          "text": "security information and event management (SIEM) coloration",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Security Benchmark Recommendation",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "What can you use to aggregate security alerts into incidents and to create automated responses to security alerts?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Microsoft Sentinel",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Microsoft Defender for Cloud",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Microsoft Intune",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Microsoft 365 Defender",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "What can you use in Microsoft Sentinel to create visual reports?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "workbooks",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "analytics",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "playbooks",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "hunting",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which components can be protected by using Microsoft 365 Defender?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "endpoints, identities, hard drives, and switches",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "endpoints, identities, email, and applications",
+          "correct": true
+        },
+        {
+          "letter": "C",
+          "text": "email, applications, routers, and switches",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "hard drives, switches, email, and applications",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "For which two services does Microsoft Secure Score provide recommendations? Each correct answer presents a complete solution.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Microsoft Entra",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Microsoft Teams",
+          "correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Azure SQL Database",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Azure Cosmos DB",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    }
+  ],
+  "total_questions": 225
+}

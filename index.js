@@ -29,7 +29,7 @@ const quizStartModal = document.getElementById('quizStartModal');
 const questionCountInput = document.getElementById('questionCountInput');
 const startQuizBtn = document.getElementById('startQuizBtn');
 const quickSelect = document.getElementById('quickSelect');
-
+const quizSelect = document.getElementById('quizSelect');
 // Funkcja do losowania pytań
 function getRandomQuestions(arr, n) {
     const shuffled = arr.slice().sort(() => 0.5 - Math.random());
@@ -39,7 +39,8 @@ function getRandomQuestions(arr, n) {
 // Wczytaj pytania z pliku JSON
 async function loadQuestions() {
     try {
-        const response = await fetch('questions.json');
+        const selectedFile = quizSelect.value; // Pobierz wybrany plik z dropdown
+        const response = await fetch(selectedFile);
         const data = await response.json();
         allQuestions = data.questions;
         // Ustaw max w input na liczbę wszystkich pytań
@@ -55,6 +56,12 @@ async function loadQuestions() {
         });
         // Pokaż modal wyboru liczby pytań
         quizStartModal.style.display = 'flex';
+        
+        // Dodaj event listener na zmianę zestawu pytań
+        quizSelect.onchange = () => {
+            loadQuestions(); // Przeładuj pytania przy zmianie zestawu
+        };
+        
         startQuizBtn.onclick = () => {
             let val = parseInt(questionCountInput.value);
             if (isNaN(val) || val < 1 || val > allQuestions.length) {
@@ -67,7 +74,7 @@ async function loadQuestions() {
         };
     } catch (error) {
         console.error('Błąd podczas wczytywania pytań:', error);
-        questionsContainer.innerHTML = '<p>Błąd podczas wczytywania pytań. Sprawdź czy plik questions.json istnieje.</p>';
+        questionsContainer.innerHTML = '<p>Błąd podczas wczytywania pytań. Sprawdź czy plik istnieje.</p>';
     }
 }
 
