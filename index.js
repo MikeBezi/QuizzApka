@@ -6,6 +6,7 @@ let userAnswers = [];
 let score = 0;
 let QUESTIONS_PER_QUIZ = 30;
 let quizFinished = false;
+let randomizeAnswers = true;
 
 // Inicjalizuj zmienne globalne natychmiast
 console.log("Inicjalizacja zmiennych globalnych na początku");
@@ -36,6 +37,16 @@ function getRandomQuestions(arr, n) {
     return shuffled.slice(0, n);
 }
 
+// Funkcja do losowania kolejności odpowiedzi
+function shuffleAnswers(answers) {
+    if (!randomizeAnswers) return answers;
+    const shuffled = [...answers];
+    for (let i = shuffled.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+    return shuffled;
+}
 // Wczytaj pytania z pliku JSON
 async function loadQuestions() {
     try {
@@ -108,7 +119,7 @@ function displayQuestion() {
     }
 
     const question = questions[currentQuestionIndex];
-    const answers = question.answers;
+    const answers = randomizeAnswers ? shuffleAnswers(question.answers) : question.answers;
     const userAnswer = userAnswers.find(a => a.questionIndex === currentQuestionIndex);
     const isChecked = userAnswer && userAnswer.isChecked;
     const multi = isMultiSelect(question);
@@ -122,9 +133,9 @@ function displayQuestion() {
     `;
     answers.forEach((answer, index) => {
         let checked = '';
-        if (multi && selectedAnswers && selectedAnswers.includes(answer.letter)) {
+        if (multi && selectedAnswers && selectedAnswers.includes(index)) {
             checked = 'checked';
-        } else if (!multi && userAnswer && userAnswer.selectedAnswer === answer.letter) {
+        } else if (!multi && userAnswer && userAnswer.selectedAnswer === index) {
             checked = 'checked';
         }
         let disabled = (isChecked || quizFinished) ? 'disabled' : '';
@@ -134,17 +145,17 @@ function displayQuestion() {
         if (quizFinished && userAnswer && userAnswer.isChecked) {
             if (answer.correct) {
                 answerClass = 'correct-answer';
-            } else if (multi && selectedAnswers.includes(answer.letter)) {
+            } else if (multi && selectedAnswers.includes(index)) {
                 answerClass = userAnswer.isCorrect ? 'user-correct' : 'user-incorrect';
-            } else if (!multi && userAnswer.selectedAnswer === answer.letter) {
+            } else if (!multi && userAnswer.selectedAnswer === index) {
                 answerClass = userAnswer.isCorrect ? 'user-correct' : 'user-incorrect';
             }
         }
         
         html += `
             <label class="answer-option ${answerClass}">
-                <input type="${multi ? 'checkbox' : 'radio'}" name="answer" value="${answer.letter}" data-index="${index}" ${checked} ${disabled}>
-                <span class="answer-text">${answer.letter}) ${answer.text}</span>
+                <input type="${multi ? 'checkbox' : 'radio'}" name="answer" value="${index}" data-index="${index}" ${checked} ${disabled}>
+                <span class="answer-text">${String.fromCharCode(65 + index)}) ${answer.text}</span>
             </label>
         `;
     });
@@ -162,9 +173,20 @@ function displayQuestion() {
         if (userAnswer && userAnswer.isChecked) {
             isCorrect = userAnswer.isCorrect;
             if (multi) {
-                userAnswerText = selectedAnswers.length > 0 ? selectedAnswers.join(', ') : "Brak odpowiedzi";
+                // Pokaż litery wybranych odpowiedzi
+                if (Array.isArray(userAnswer.selectedAnswer) && userAnswer.selectedAnswer.length > 0) {
+                    const userLetters = userAnswer.selectedAnswer.map(idx => answers[idx]?.letter || '?').join(', ');
+                    userAnswerText = userLetters;
+                } else {
+                    userAnswerText = "Brak odpowiedzi";
+                }
             } else {
-                userAnswerText = userAnswer.selectedAnswer || "Brak odpowiedzi";
+                // Pokaż literę wybranej odpowiedzi
+                if (userAnswer.selectedAnswer !== undefined && userAnswer.selectedAnswer !== '') {
+                    userAnswerText = answers[userAnswer.selectedAnswer]?.letter || "Brak odpowiedzi";
+                } else {
+                    userAnswerText = "Brak odpowiedzi";
+                }
             }
         }
         
@@ -190,14 +212,14 @@ function displayQuestion() {
             document.querySelectorAll('input[name="answer"]').forEach(input => {
                 input.addEventListener('change', () => {
                     const checkedInputs = Array.from(document.querySelectorAll('input[name="answer"]:checked'));
-                    const selected = checkedInputs.map(i => i.value);
+                    const selected = checkedInputs.map(i => parseInt(i.value));
                     saveUserAnswer(currentQuestionIndex, selected);
                 });
             });
         } else {
             document.querySelectorAll('input[name="answer"]').forEach(input => {
                 input.addEventListener('change', (e) => {
-                    saveUserAnswer(currentQuestionIndex, e.target.value);
+                    saveUserAnswer(currentQuestionIndex, parseInt(e.target.value)); 
                 });
             });
         }
@@ -261,26 +283,27 @@ function finishQuiz() {
         if (userAnswer && !userAnswer.isChecked) {
             // Wywołaj checkAnswer tylko jeśli coś zaznaczono
             const question = questions[currentQuestionIndex];
+            const answers = randomizeAnswers ? shuffleAnswers(question.answers) : question.answers;
             const multi = isMultiSelect(question);
             let selected;
             if (multi) {
                 selected = userAnswer.selectedAnswer || [];
                 if (selected.length > 0) {
                     // Ręcznie oceniaj
-                    const correctLetters = question.answers.filter(a => a.correct).map(a => a.letter);
-                    const isCorrect = arraysEqualNoOrder(selected, correctLetters);
+                    const correctIndices = answers.map((a, idx) => a.correct ? idx : -1).filter(idx => idx !== -1);
+                    const isCorrect = arraysEqualNoOrder(selected, correctIndices);
                     userAnswer.isCorrect = isCorrect;
-                    userAnswer.correctAnswer = correctLetters;
+                    userAnswer.correctAnswer = correctIndices;
                     userAnswer.isChecked = true;
                     if (isCorrect) score++;
                 }
             } else {
                 selected = userAnswer.selectedAnswer;
-                if (selected) {
-                    const isCorrect = question.answers.find(a => a.letter === selected)?.correct || false;
-                    const correctLetters = question.answers.filter(a => a.correct).map(a => a.letter);
+                if (selected !== undefined && selected !== '') {
+                    const correctIndices = answers.map((a, idx) => a.correct ? idx : -1).filter(idx => idx !== -1);
+                    const isCorrect = answers[selected]?.correct || false;
                     userAnswer.isCorrect = isCorrect;
-                    userAnswer.correctAnswer = correctLetters;
+                    userAnswer.correctAnswer = correctIndices;
                     userAnswer.isChecked = true;
                     if (isCorrect) score++;
                 }
@@ -291,8 +314,9 @@ function finishQuiz() {
     for (let i = 0; i < questions.length; i++) {
         let userAnswer = userAnswers.find(a => a.questionIndex === i);
         const question = questions[i];
+        const answers = randomizeAnswers ? shuffleAnswers(question.answers) : question.answers;
         const multi = isMultiSelect(question);
-        const correctLetters = question.answers.filter(a => a.correct).map(a => a.letter);
+        const correctIndices = answers.map((a, idx) => a.correct ? idx : -1).filter(idx => idx !== -1);
         
         if (!userAnswer) {
             // Brak odpowiedzi - dodaj pustą odpowiedź
@@ -300,7 +324,7 @@ function finishQuiz() {
                 questionIndex: i,
                 selectedAnswer: multi ? [] : '',
                 isCorrect: false,
-                correctAnswer: correctLetters,
+                correctAnswer: correctIndices,
                 isChecked: true
             };
             userAnswers.push(userAnswer);
@@ -308,12 +332,12 @@ function finishQuiz() {
             // Odpowiedź nieoceniona - oceń ją
             let isCorrect = false;
             if (multi) {
-                isCorrect = arraysEqualNoOrder(userAnswer.selectedAnswer || [], correctLetters);
+                isCorrect = arraysEqualNoOrder(userAnswer.selectedAnswer || [], correctIndices);
             } else {
-                isCorrect = question.answers.find(a => a.letter === userAnswer.selectedAnswer)?.correct || false;
+                isCorrect = answers[userAnswer.selectedAnswer]?.correct || false;
             }
             userAnswer.isCorrect = isCorrect;
-            userAnswer.correctAnswer = correctLetters;
+            userAnswer.correctAnswer = correctIndices;
             userAnswer.isChecked = true;
             if (isCorrect) score++;
         }
@@ -360,10 +384,12 @@ window.goToQuestion = function(index) {
 // Zmieniamy checkAnswer, by nadpisywać odpowiedź użytkownika
 function checkAnswer() {
     const question = questions[currentQuestionIndex];
+    const answers = randomizeAnswers ? shuffleAnswers(question.answers) : question.answers;
     const multi = isMultiSelect(question);
     let selected;
+
     if (multi) {
-        selected = Array.from(document.querySelectorAll('input[name="answer"]:checked')).map(i => i.value);
+        selected = Array.from(document.querySelectorAll('input[name="answer"]:checked')).map(i => parseInt(i.value));
         if (selected.length === 0) {
             alert('Wybierz co najmniej jedną odpowiedź przed sprawdzeniem!');
             return;
@@ -374,16 +400,24 @@ function checkAnswer() {
             alert('Wybierz odpowiedź przed sprawdzeniem!');
             return;
         }
-        selected = selectedAnswer.value;
+        selected = parseInt(selectedAnswer.value);
     }
-    const answers = question.answers;
+
     let isCorrect = false;
-    let correctLetters = answers.filter(a => a.correct).map(a => a.letter);
+    let correctIndices;
+
     if (multi) {
-        // Wszystkie poprawne i tylko poprawne muszą być zaznaczone
-        isCorrect = arraysEqualNoOrder(selected, correctLetters);
+        // Znajdź indeksy poprawnych odpowiedzi
+        correctIndices = answers
+            .map((a, idx) => a.correct ? idx : -1)
+            .filter(idx => idx !== -1);
+        isCorrect = arraysEqualNoOrder(selected, correctIndices);
     } else {
-        isCorrect = answers.find(a => a.letter === selected)?.correct || false;
+        // Sprawdź czy wybrany indeks jest poprawny
+        isCorrect = answers[selected]?.correct || false;
+        correctIndices = answers
+            .map((a, idx) => a.correct ? idx : -1)
+            .filter(idx => idx !== -1);
     }
 
     // Zapisz i oceń odpowiedź użytkownika
@@ -392,7 +426,7 @@ function checkAnswer() {
         if (!userAnswers[existingIndex].isChecked) {
             userAnswers[existingIndex].isChecked = true;
             userAnswers[existingIndex].isCorrect = isCorrect;
-            userAnswers[existingIndex].correctAnswer = correctLetters;
+            userAnswers[existingIndex].correctAnswer = correctIndices;
             if (isCorrect) score++;
         }
     } else {
@@ -400,13 +434,13 @@ function checkAnswer() {
             questionIndex: currentQuestionIndex,
             selectedAnswer: multi ? selected : selected,
             isCorrect: isCorrect,
-            correctAnswer: correctLetters,
+            correctAnswer: correctIndices,
             isChecked: true
         });
         if (isCorrect) score++;
     }
     checkedQuestions[currentQuestionIndex] = true;
-    showAnswerResult(isCorrect, selected, question, correctLetters, multi);
+    showAnswerResult(isCorrect, selected, question, correctIndices, multi);
     updateScore();
 }
 
@@ -418,18 +452,34 @@ function arraysEqualNoOrder(a, b) {
 }
 
 // Pokaż wynik odpowiedzi
-function showAnswerResult(isCorrect, selectedAnswer, question, correctLetters, multi) {
-    let correctAnswers = question.answers.filter(a => correctLetters.includes(a.letter));
+function showAnswerResult(isCorrect, selectedAnswer, question, correctIndices, multi) {
+    const answers = randomizeAnswers ? shuffleAnswers(question.answers) : question.answers;
+    let correctAnswers = correctIndices.map(idx => answers[idx]);
     let selectedAnswers = multi
-        ? question.answers.filter(a => selectedAnswer.includes(a.letter))
-        : [question.answers.find(a => a.letter === selectedAnswer)];
+        ? selectedAnswer.map(idx => answers[idx])
+        : [answers[selectedAnswer]];
+    
+    // Konwertuj na wyświetlane literki A, B, C, D (według pozycji w answers)
+    let selectedDisplayText = selectedAnswers.map(a => {
+        if (!a) return '';
+        const displayIndex = answers.findIndex(ans => ans.text === a.text);
+        const displayLetter = String.fromCharCode(65 + displayIndex);
+        return `${displayLetter}) ${a.text}`;
+    }).join('<br>');
+    
+    let correctDisplayText = correctAnswers.map(a => {
+        const displayIndex = answers.findIndex(ans => ans.text === a.text);
+        const displayLetter = String.fromCharCode(65 + displayIndex);
+        return `${displayLetter}) ${a.text}`;
+    }).join('<br>');
+    
     let resultHtml = `
         <div class="answer-result ${isCorrect ? 'correct' : 'incorrect'}">
             <h3>${isCorrect ? '✓ Poprawna odpowiedź!' : '✗ Błędna odpowiedź'}</h3>
-            <p>Twoja odpowiedź: ${selectedAnswers.map(a => a ? a.letter + ') ' + a.text : '').join('<br>')}</p>
+            <p>Twoja odpowiedź: ${selectedDisplayText}</p>
     `;
     if (!isCorrect) {
-        resultHtml += `<p>Poprawna odpowiedź: ${correctAnswers.map(a => a.letter + ') ' + a.text).join('<br>')}</p>`;
+        resultHtml += `<p>Poprawna odpowiedź: ${correctDisplayText}</p>`;
     }
     resultHtml += `
             <button onclick=\"nextQuestion()\">Następne pytanie</button>
@@ -463,15 +513,29 @@ function showResults() {
     
     userAnswers.forEach((answer, index) => {
         const question = questions[answer.questionIndex];
+        const answers = randomizeAnswers ? shuffleAnswers(question.answers) : question.answers;
         const status = answer.isCorrect ? '✓' : '✗';
         const statusClass = answer.isCorrect ? 'correct' : 'incorrect';
+        
+        // Pokaż litery odpowiedzi (A, B, C, D)
+        let userAnswerText = "Brak";
+        if (Array.isArray(answer.selectedAnswer)) {
+            userAnswerText = answer.selectedAnswer.map(idx => String.fromCharCode(65 + idx)).join(', ');
+        } else if (answer.selectedAnswer !== undefined && answer.selectedAnswer !== '') {
+            userAnswerText = String.fromCharCode(65 + answer.selectedAnswer);
+        }
+        
+        let correctAnswerText = "";
+        if (Array.isArray(answer.correctAnswer)) {
+            correctAnswerText = answer.correctAnswer.map(idx => String.fromCharCode(65 + idx)).join(', ');
+        }
         
         resultsHtml += `
             <div class="answer-summary ${statusClass}">
                 <span class="status">${status}</span>
                 <span class="question-number">Pytanie ${index + 1}:</span>
-                <span class="user-answer">${answer.selectedAnswer})</span>
-                ${!answer.isCorrect ? `<span class="correct-answer">Poprawna: ${answer.correctAnswer})</span>` : ''}
+                <span class="user-answer">${userAnswerText}</span>
+                ${!answer.isCorrect ? `<span class="correct-answer">Poprawna: ${correctAnswerText}</span>` : ''}
             </div>
         `;
     });
