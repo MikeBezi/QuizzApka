@@ -47,6 +47,27 @@ function shuffleAnswers(answers) {
     }
     return shuffled;
 }
+
+// Funkcja do losowania liter odpowiedzi (A, B, C, D) - zachowuje kolejność treści
+function randomizeAnswerLetters(answers) {
+    if (!randomizeAnswers) return answers;
+    
+    // Stwórz kopię z losowymi literkami
+    const letters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'];
+    const shuffled = [...answers];
+    
+    // Wymieszaj literki
+    for (let i = shuffled.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+    
+    // Przypisz losowe literki (ale zachowaj oryginalną kolejność treści!)
+    return answers.map((answer, index) => ({
+        ...answer,  // Zachowaj wszystko co było (text, correct, itd.)
+        letter: shuffled[index].letter  // Ale zmień literkę na losową
+    }));
+}
 // Wczytaj pytania z pliku JSON
 async function loadQuestions() {
     try {
@@ -119,7 +140,7 @@ function displayQuestion() {
     }
 
     const question = questions[currentQuestionIndex];
-    const answers = randomizeAnswers ? shuffleAnswers(question.answers) : question.answers;
+    const answers = randomizeAnswers ? randomizeAnswerLetters(question.answers) : question.answers;
     const userAnswer = userAnswers.find(a => a.questionIndex === currentQuestionIndex);
     const isChecked = userAnswer && userAnswer.isChecked;
     const multi = isMultiSelect(question);
@@ -283,7 +304,7 @@ function finishQuiz() {
         if (userAnswer && !userAnswer.isChecked) {
             // Wywołaj checkAnswer tylko jeśli coś zaznaczono
             const question = questions[currentQuestionIndex];
-            const answers = randomizeAnswers ? shuffleAnswers(question.answers) : question.answers;
+            const answers = randomizeAnswers ? randomizeAnswerLetters(question.answers) : question.answers;
             const multi = isMultiSelect(question);
             let selected;
             if (multi) {
@@ -314,7 +335,7 @@ function finishQuiz() {
     for (let i = 0; i < questions.length; i++) {
         let userAnswer = userAnswers.find(a => a.questionIndex === i);
         const question = questions[i];
-        const answers = randomizeAnswers ? shuffleAnswers(question.answers) : question.answers;
+        const answers = randomizeAnswers ? randomizeAnswerLetters(question.answers) : question.answers;
         const multi = isMultiSelect(question);
         const correctIndices = answers.map((a, idx) => a.correct ? idx : -1).filter(idx => idx !== -1);
         
@@ -384,7 +405,7 @@ window.goToQuestion = function(index) {
 // Zmieniamy checkAnswer, by nadpisywać odpowiedź użytkownika
 function checkAnswer() {
     const question = questions[currentQuestionIndex];
-    const answers = randomizeAnswers ? shuffleAnswers(question.answers) : question.answers;
+    const answers = randomizeAnswers ? randomizeAnswerLetters(question.answers) : question.answers;
     const multi = isMultiSelect(question);
     let selected;
 
@@ -453,7 +474,7 @@ function arraysEqualNoOrder(a, b) {
 
 // Pokaż wynik odpowiedzi
 function showAnswerResult(isCorrect, selectedAnswer, question, correctIndices, multi) {
-    const answers = randomizeAnswers ? shuffleAnswers(question.answers) : question.answers;
+    const answers = randomizeAnswers ? randomizeAnswerLetters(question.answers) : question.answers;
     let correctAnswers = correctIndices.map(idx => answers[idx]);
     let selectedAnswers = multi
         ? selectedAnswer.map(idx => answers[idx])
@@ -462,14 +483,14 @@ function showAnswerResult(isCorrect, selectedAnswer, question, correctIndices, m
     // Konwertuj na wyświetlane literki A, B, C, D (według pozycji w answers)
     let selectedDisplayText = selectedAnswers.map(a => {
         if (!a) return '';
-        const displayIndex = answers.findIndex(ans => ans.text === a.text);
-        const displayLetter = String.fromCharCode(65 + displayIndex);
+        const displayIndex = answers.findIndex(ans => ans === a); // Znajdź pozycję w tablicy answers
+        const displayLetter = String.fromCharCode(65 + displayIndex); // A, B, C, D
         return `${displayLetter}) ${a.text}`;
     }).join('<br>');
     
     let correctDisplayText = correctAnswers.map(a => {
-        const displayIndex = answers.findIndex(ans => ans.text === a.text);
-        const displayLetter = String.fromCharCode(65 + displayIndex);
+        const displayIndex = answers.findIndex(ans => ans === a); // Znajdź pozycję w tablicy answers
+        const displayLetter = String.fromCharCode(65 + displayIndex); // A, B, C, D
         return `${displayLetter}) ${a.text}`;
     }).join('<br>');
     
@@ -513,7 +534,7 @@ function showResults() {
     
     userAnswers.forEach((answer, index) => {
         const question = questions[answer.questionIndex];
-        const answers = randomizeAnswers ? shuffleAnswers(question.answers) : question.answers;
+        const answers = randomizeAnswers ? randomizeAnswerLetters(question.answers) : question.answers;
         const status = answer.isCorrect ? '✓' : '✗';
         const statusClass = answer.isCorrect ? 'correct' : 'incorrect';
         
