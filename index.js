@@ -1,4 +1,3 @@
-// Zmienne globalne
 let allQuestions = [];
 let questions = [];
 let currentQuestionIndex = 0;
@@ -8,77 +7,42 @@ let QUESTIONS_PER_QUIZ = 30;
 let quizFinished = false;
 let randomizeAnswers = true;
 
-// Inicjalizuj zmienne globalne natychmiast
-console.log("Inicjalizacja zmiennych globalnych na początku");
-window.quizFinished = false;
-window.questions = [];
-window.userAnswers = [];
-console.log("window.quizFinished ustawione na:", window.quizFinished);
-
-// Elementy DOM
 const questionsContainer = document.getElementById('questions');
 const checkButton = document.getElementById('check');
 const resultsContainer = document.getElementById('results');
 const scoreCounter = document.getElementById('scoreCounter');
 const questionGrid = document.getElementById('questionGrid');
 const navButtons = document.getElementById('navButtons');
-
-// Dodaję tablicę, która śledzi, które pytania zostały już sprawdzone
-let checkedQuestions = [];
-
 const quizStartModal = document.getElementById('quizStartModal');
 const questionCountInput = document.getElementById('questionCountInput');
 const startQuizBtn = document.getElementById('startQuizBtn');
 const quickSelect = document.getElementById('quickSelect');
 const quizSelect = document.getElementById('quizSelect');
-// Funkcja do losowania pytań
+
+let checkedQuestions = [];
+
 function getRandomQuestions(arr, n) {
     const shuffled = arr.slice().sort(() => 0.5 - Math.random());
     return shuffled.slice(0, n);
 }
 
-// Funkcja do losowania kolejności odpowiedzi
-function shuffleAnswers(answers) {
-    if (!randomizeAnswers) return answers;
-    const shuffled = [...answers];
-    for (let i = shuffled.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
-    }
-    return shuffled;
+function getCorrectAnswers(answers) {
+    const corretAnswers = answers.filter(a => a.correct).map(a => a.text);
+    return corretAnswers;  
 }
 
-// Funkcja do losowania liter odpowiedzi (A, B, C, D) - zachowuje kolejność treści
-function randomizeAnswerLetters(answers) {
-    if (!randomizeAnswers) return answers;
-    
-    // Stwórz kopię z losowymi literkami
-    const letters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'];
-    const shuffled = [...answers];
-    
-    // Wymieszaj literki
-    for (let i = shuffled.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
-    }
-    
-    // Przypisz losowe literki (ale zachowaj oryginalną kolejność treści!)
-    return answers.map((answer, index) => ({
-        ...answer,  // Zachowaj wszystko co było (text, correct, itd.)
-        letter: shuffled[index].letter  // Ale zmień literkę na losową
-    }));
+function getRandomAnswers(answers) {
+    const randomAnswers = answers.slice().sort(() => 0.5 - Math.random()).map(a => a.text);
+    return randomAnswers;
 }
-// Wczytaj pytania z pliku JSON
 async function loadQuestions() {
     try {
-        const selectedFile = quizSelect.value; // Pobierz wybrany plik z dropdown
+        const selectedFile = quizSelect.value;
         const response = await fetch(selectedFile);
         const data = await response.json();
         allQuestions = data.questions;
-        // Ustaw max w input na liczbę wszystkich pytań
         questionCountInput.max = allQuestions.length;
         questionCountInput.value = Math.min(30, allQuestions.length);
-        // Dodaj szybkie opcje wyboru
         const quickOptions = [1, 30, 60, 90, 120, 150, 180, 210].filter(n => n <= allQuestions.length);
         quickSelect.innerHTML = quickOptions.map(n => `<button class='quick-btn' data-n='${n}'>${n}</button>`).join(' ');
         quickSelect.querySelectorAll('button').forEach(btn => {
@@ -86,12 +50,9 @@ async function loadQuestions() {
                 questionCountInput.value = btn.dataset.n;
             };
         });
-        // Pokaż modal wyboru liczby pytań
-        quizStartModal.style.display = 'flex';
-        
-        // Dodaj event listener na zmianę zestawu pytań
+        quizStartModal.style.display = 'flex'; 
         quizSelect.onchange = () => {
-            loadQuestions(); // Przeładuj pytania przy zmianie zestawu
+            loadQuestions();
         };
         
         startQuizBtn.onclick = () => {
@@ -105,7 +66,6 @@ async function loadQuestions() {
             startQuiz();
         };
     } catch (error) {
-        console.error('Błąd podczas wczytywania pytań:', error);
         questionsContainer.innerHTML = '<p>Błąd podczas wczytywania pytań. Sprawdź czy plik istnieje.</p>';
     }
 }
@@ -116,31 +76,23 @@ function startQuiz() {
     } else {
         questions = getRandomQuestions(allQuestions, QUESTIONS_PER_QUIZ);
     }
+    
     currentQuestionIndex = 0;
     userAnswers = [];
     score = 0;
     checkedQuestions = [];
     quizFinished = false;
     
-    // Aktualizuj zmienne globalne
-    window.quizFinished = false;
-    window.questions = questions;
-    window.userAnswers = userAnswers;
-    
     updateScore();
     displayQuestion();
 }
 
-// Wyświetl aktualne pytanie
 function displayQuestion() {
-    console.log("displayQuestion() wywołane, quizFinished =", quizFinished);
-    if (currentQuestionIndex >= questions.length) {
-        showResults();
-        return;
-    }
-
     const question = questions[currentQuestionIndex];
-    const answers = randomizeAnswers ? randomizeAnswerLetters(question.answers) : question.answers;
+    const answers = question.answers;
+    const correctAnswers = getCorrectAnswers(answers);
+    const randomAnswers = getRandomAnswers(answers);
+    console.log(correctAnswers);
     const userAnswer = userAnswers.find(a => a.questionIndex === currentQuestionIndex);
     const isChecked = userAnswer && userAnswer.isChecked;
     const multi = isMultiSelect(question);
@@ -152,31 +104,30 @@ function displayQuestion() {
             <p class="question-text">${question.question}</p>
             <div class="answers">
     `;
-    answers.forEach((answer, index) => {
+    randomAnswers.forEach((answer, index) => {
         let checked = '';
-        if (multi && selectedAnswers && selectedAnswers.includes(index)) {
+        if (multi && selectedAnswers && selectedAnswers.includes(answer)) {
             checked = 'checked';
-        } else if (!multi && userAnswer && userAnswer.selectedAnswer === index) {
+        } else if (!multi && userAnswer && userAnswer.selectedAnswer === answer) {
             checked = 'checked';
         }
         let disabled = (isChecked || quizFinished) ? 'disabled' : '';
         
-        // Dodaj klasy dla poprawnych/błędnych odpowiedzi po zakończeniu quizu
         let answerClass = '';
         if (quizFinished && userAnswer && userAnswer.isChecked) {
-            if (answer.correct) {
+            if (correctAnswers.includes(answer)) {
                 answerClass = 'correct-answer';
-            } else if (multi && selectedAnswers.includes(index)) {
+            } else if (multi && selectedAnswers.includes(answer)) {
                 answerClass = userAnswer.isCorrect ? 'user-correct' : 'user-incorrect';
-            } else if (!multi && userAnswer.selectedAnswer === index) {
+            } else if (!multi && userAnswer.selectedAnswer === answer) {
                 answerClass = userAnswer.isCorrect ? 'user-correct' : 'user-incorrect';
             }
         }
         
         html += `
             <label class="answer-option ${answerClass}">
-                <input type="${multi ? 'checkbox' : 'radio'}" name="answer" value="${index}" data-index="${index}" ${checked} ${disabled}>
-                <span class="answer-text">${String.fromCharCode(65 + index)}) ${answer.text}</span>
+                <input type="${multi ? 'checkbox' : 'radio'}" name="answer" value="${answer}" ${checked} ${disabled}>
+                <span class="answer-text">${String.fromCharCode(65 + index)}) ${answer}</span>
             </label>
         `;
     });
@@ -184,27 +135,28 @@ function displayQuestion() {
             </div>
         </div>
     `;
-    
-    // Dodaj wyjaśnienie po zakończeniu quizu
+
     if (quizFinished) {
-        const correctLetters = question.answers.filter(a => a.correct).map(a => a.letter);
+        const correctLetters = randomAnswers.filter(a => a.correct).map((a, idx) => String.fromCharCode(65 + idx));
         let isCorrect = false;
         let userAnswerText = "Brak odpowiedzi";
         
         if (userAnswer && userAnswer.isChecked) {
             isCorrect = userAnswer.isCorrect;
             if (multi) {
-                // Pokaż litery wybranych odpowiedzi
                 if (Array.isArray(userAnswer.selectedAnswer) && userAnswer.selectedAnswer.length > 0) {
-                    const userLetters = userAnswer.selectedAnswer.map(idx => answers[idx]?.letter || '?').join(', ');
+                    const userLetters = userAnswer.selectedAnswer.map(text => {
+                        const idx = randomAnswers.findIndex(a => a === text);
+                        return idx >= 0 ? String.fromCharCode(65 + idx) : '?';
+                    }).join(', ');
                     userAnswerText = userLetters;
                 } else {
                     userAnswerText = "Brak odpowiedzi";
                 }
             } else {
-                // Pokaż literę wybranej odpowiedzi
                 if (userAnswer.selectedAnswer !== undefined && userAnswer.selectedAnswer !== '') {
-                    userAnswerText = answers[userAnswer.selectedAnswer]?.letter || "Brak odpowiedzi";
+                    const idx = randomAnswers.findIndex(a => a === userAnswer.selectedAnswer);
+                    userAnswerText = idx >= 0 ? String.fromCharCode(65 + idx) : "Brak odpowiedzi";
                 } else {
                     userAnswerText = "Brak odpowiedzi";
                 }
@@ -227,20 +179,19 @@ function displayQuestion() {
     resultsContainer.innerHTML = '';
     checkButton.style.display = (isChecked || quizFinished) ? 'none' : 'block';
 
-    // Dodaj event listener do zapisywania odpowiedzi po zaznaczeniu
     if (!isChecked && !quizFinished) {
         if (multi) {
             document.querySelectorAll('input[name="answer"]').forEach(input => {
                 input.addEventListener('change', () => {
                     const checkedInputs = Array.from(document.querySelectorAll('input[name="answer"]:checked'));
-                    const selected = checkedInputs.map(i => parseInt(i.value));
+                    const selected = checkedInputs.map(i => i.value);
                     saveUserAnswer(currentQuestionIndex, selected);
                 });
             });
         } else {
             document.querySelectorAll('input[name="answer"]').forEach(input => {
                 input.addEventListener('change', (e) => {
-                    saveUserAnswer(currentQuestionIndex, parseInt(e.target.value)); 
+                    saveUserAnswer(currentQuestionIndex, e.target.value); 
                 });
             });
         }
@@ -262,7 +213,6 @@ function saveUserAnswer(qIndex, answerLetterOrArray) {
     }
 }
 
-// Renderuj przyciski nawigacyjne
 function renderNavButtons() {
     let navHtml = '';
     if (currentQuestionIndex > 0) {
@@ -274,7 +224,6 @@ function renderNavButtons() {
         navHtml += `<button onclick="finishQuiz()">Zakończ</button>`;
     }
     
-    // Po zakończeniu quizu, dodaj przycisk powrotu do wyników
     if (quizFinished) {
         navHtml += `<button onclick="showResults()">Pokaż wyniki końcowe</button>`;
     }
@@ -297,32 +246,28 @@ function goToNext() {
 }
 
 function finishQuiz() {
-    console.log("finishQuiz() wywołane");
-    // Oceń ostatnie pytanie jeśli nie zostało sprawdzone
     if (currentQuestionIndex === questions.length - 1) {
         const userAnswer = userAnswers.find(a => a.questionIndex === currentQuestionIndex);
         if (userAnswer && !userAnswer.isChecked) {
-            // Wywołaj checkAnswer tylko jeśli coś zaznaczono
             const question = questions[currentQuestionIndex];
-            const answers = randomizeAnswers ? randomizeAnswerLetters(question.answers) : question.answers;
+            const answers = question.answers;
             const multi = isMultiSelect(question);
-            let selected;
+            let selectedTexts = userAnswer.selectedAnswer;
             if (multi) {
-                selected = userAnswer.selectedAnswer || [];
-                if (selected.length > 0) {
-                    // Ręcznie oceniaj
+                if (selectedTexts && selectedTexts.length > 0) {
+                    const selectedIndices = selectedTexts.map(text => answers.findIndex(a => a.text === text));
                     const correctIndices = answers.map((a, idx) => a.correct ? idx : -1).filter(idx => idx !== -1);
-                    const isCorrect = arraysEqualNoOrder(selected, correctIndices);
+                    const isCorrect = arraysEqualNoOrder(selectedIndices, correctIndices);
                     userAnswer.isCorrect = isCorrect;
                     userAnswer.correctAnswer = correctIndices;
                     userAnswer.isChecked = true;
                     if (isCorrect) score++;
                 }
             } else {
-                selected = userAnswer.selectedAnswer;
-                if (selected !== undefined && selected !== '') {
+                if (selectedTexts !== undefined && selectedTexts !== '') {
+                    const selectedIndex = answers.findIndex(a => a.text === selectedTexts);
                     const correctIndices = answers.map((a, idx) => a.correct ? idx : -1).filter(idx => idx !== -1);
-                    const isCorrect = answers[selected]?.correct || false;
+                    const isCorrect = answers[selectedIndex]?.correct || false;
                     userAnswer.isCorrect = isCorrect;
                     userAnswer.correctAnswer = correctIndices;
                     userAnswer.isChecked = true;
@@ -331,16 +276,15 @@ function finishQuiz() {
             }
         }
     }
-    // Oceń wszystkie nieocenione odpowiedzi (pozostałe) i dodaj brakujące
+
     for (let i = 0; i < questions.length; i++) {
         let userAnswer = userAnswers.find(a => a.questionIndex === i);
         const question = questions[i];
-        const answers = randomizeAnswers ? randomizeAnswerLetters(question.answers) : question.answers;
+        const answers = question.answers;
         const multi = isMultiSelect(question);
         const correctIndices = answers.map((a, idx) => a.correct ? idx : -1).filter(idx => idx !== -1);
         
         if (!userAnswer) {
-            // Brak odpowiedzi - dodaj pustą odpowiedź
             userAnswer = {
                 questionIndex: i,
                 selectedAnswer: multi ? [] : '',
@@ -350,12 +294,16 @@ function finishQuiz() {
             };
             userAnswers.push(userAnswer);
         } else if (!userAnswer.isChecked) {
-            // Odpowiedź nieoceniona - oceń ją
             let isCorrect = false;
+            let selectedTexts = userAnswer.selectedAnswer;
             if (multi) {
-                isCorrect = arraysEqualNoOrder(userAnswer.selectedAnswer || [], correctIndices);
+                const selectedIndices = selectedTexts && selectedTexts.length > 0 
+                    ? selectedTexts.map(text => answers.findIndex(a => a.text === text)) 
+                    : [];
+                isCorrect = arraysEqualNoOrder(selectedIndices, correctIndices);
             } else {
-                isCorrect = answers[userAnswer.selectedAnswer]?.correct || false;
+                const selectedIndex = selectedTexts ? answers.findIndex(a => a.text === selectedTexts) : -1;
+                isCorrect = selectedIndex >= 0 ? answers[selectedIndex]?.correct || false : false;
             }
             userAnswer.isCorrect = isCorrect;
             userAnswer.correctAnswer = correctIndices;
@@ -364,16 +312,10 @@ function finishQuiz() {
         }
     }
     
-    // Oznacz quiz jako zakończony
     quizFinished = true;
-    window.quizFinished = true; // Aktualizuj globalną zmienną
-    console.log("Quiz zakończony, quizFinished =", quizFinished);
-    
-    // Pokaż wyniki końcowe
     showResults();
 }
 
-// Renderuj siatkę pytań w panelu po prawej
 function renderQuestionGrid() {
     let gridHtml = '<div class="question-grid">';
     for (let i = 0; i < questions.length; i++) {
@@ -400,18 +342,15 @@ window.goToQuestion = function(index) {
     displayQuestion();
 }
 
-// Zmienne globalne są już zdefiniowane na końcu pliku
-
-// Zmieniamy checkAnswer, by nadpisywać odpowiedź użytkownika
 function checkAnswer() {
     const question = questions[currentQuestionIndex];
-    const answers = randomizeAnswers ? randomizeAnswerLetters(question.answers) : question.answers;
+    const answers = question.answers;
     const multi = isMultiSelect(question);
-    let selected;
+    let selectedTexts;
 
     if (multi) {
-        selected = Array.from(document.querySelectorAll('input[name="answer"]:checked')).map(i => parseInt(i.value));
-        if (selected.length === 0) {
+        selectedTexts = Array.from(document.querySelectorAll('input[name="answer"]:checked')).map(i => i.value);
+        if (selectedTexts.length === 0) {
             alert('Wybierz co najmniej jedną odpowiedź przed sprawdzeniem!');
             return;
         }
@@ -421,39 +360,40 @@ function checkAnswer() {
             alert('Wybierz odpowiedź przed sprawdzeniem!');
             return;
         }
-        selected = parseInt(selectedAnswer.value);
+        selectedTexts = selectedAnswer.value;
     }
+
+    let selectedIndices;
+    if (multi) {
+        selectedIndices = selectedTexts.map(text => answers.findIndex(a => a.text === text));
+    } else {
+        selectedIndices = answers.findIndex(a => a.text === selectedTexts);
+    }
+
+    const correctIndices = answers
+        .map((a, idx) => a.correct ? idx : -1)
+        .filter(idx => idx !== -1);
 
     let isCorrect = false;
-    let correctIndices;
-
     if (multi) {
-        // Znajdź indeksy poprawnych odpowiedzi
-        correctIndices = answers
-            .map((a, idx) => a.correct ? idx : -1)
-            .filter(idx => idx !== -1);
-        isCorrect = arraysEqualNoOrder(selected, correctIndices);
+        isCorrect = arraysEqualNoOrder(selectedIndices, correctIndices);
     } else {
-        // Sprawdź czy wybrany indeks jest poprawny
-        isCorrect = answers[selected]?.correct || false;
-        correctIndices = answers
-            .map((a, idx) => a.correct ? idx : -1)
-            .filter(idx => idx !== -1);
+        isCorrect = answers[selectedIndices]?.correct || false;
     }
 
-    // Zapisz i oceń odpowiedź użytkownika
     const existingIndex = userAnswers.findIndex(a => a.questionIndex === currentQuestionIndex);
     if (existingIndex !== -1) {
         if (!userAnswers[existingIndex].isChecked) {
             userAnswers[existingIndex].isChecked = true;
             userAnswers[existingIndex].isCorrect = isCorrect;
             userAnswers[existingIndex].correctAnswer = correctIndices;
+            userAnswers[existingIndex].selectedAnswer = multi ? selectedTexts : selectedTexts;
             if (isCorrect) score++;
         }
     } else {
         userAnswers.push({
             questionIndex: currentQuestionIndex,
-            selectedAnswer: multi ? selected : selected,
+            selectedAnswer: multi ? selectedTexts : selectedTexts,
             isCorrect: isCorrect,
             correctAnswer: correctIndices,
             isChecked: true
@@ -461,7 +401,7 @@ function checkAnswer() {
         if (isCorrect) score++;
     }
     checkedQuestions[currentQuestionIndex] = true;
-    showAnswerResult(isCorrect, selected, question, correctIndices, multi);
+    showAnswerResult(isCorrect, selectedIndices, question, correctIndices, multi);
     updateScore();
 }
 
@@ -472,26 +412,18 @@ function arraysEqualNoOrder(a, b) {
     return sortedA.every((val, idx) => val === sortedB[idx]);
 }
 
-// Pokaż wynik odpowiedzi
 function showAnswerResult(isCorrect, selectedAnswer, question, correctIndices, multi) {
-    const answers = randomizeAnswers ? randomizeAnswerLetters(question.answers) : question.answers;
+    const answers = question.answers;
     let correctAnswers = correctIndices.map(idx => answers[idx]);
-    let selectedAnswers = multi
-        ? selectedAnswer.map(idx => answers[idx])
-        : [answers[selectedAnswer]];
+    let selectedAnswers = multi ? selectedAnswer.map(idx => answers[idx]) : [answers[selectedAnswer]];
     
-    // Konwertuj na wyświetlane literki A, B, C, D (według pozycji w answers)
     let selectedDisplayText = selectedAnswers.map(a => {
         if (!a) return '';
-        const displayIndex = answers.findIndex(ans => ans === a); // Znajdź pozycję w tablicy answers
-        const displayLetter = String.fromCharCode(65 + displayIndex); // A, B, C, D
-        return `${displayLetter}) ${a.text}`;
+        return a.text;
     }).join('<br>');
     
     let correctDisplayText = correctAnswers.map(a => {
-        const displayIndex = answers.findIndex(ans => ans === a); // Znajdź pozycję w tablicy answers
-        const displayLetter = String.fromCharCode(65 + displayIndex); // A, B, C, D
-        return `${displayLetter}) ${a.text}`;
+        return a.text;
     }).join('<br>');
     
     let resultHtml = `
@@ -510,7 +442,6 @@ function showAnswerResult(isCorrect, selectedAnswer, question, correctIndices, m
     checkButton.style.display = 'none';
 }
 
-// Przejdź do następnego pytania
 function nextQuestion() {
     currentQuestionIndex++;
     resultsContainer.innerHTML = '';
@@ -518,7 +449,6 @@ function nextQuestion() {
     displayQuestion();
 }
 
-// Pokaż końcowe wyniki
 function showResults() {
     const percentage = Math.round((score / questions.length) * 100);
     
@@ -534,21 +464,24 @@ function showResults() {
     
     userAnswers.forEach((answer, index) => {
         const question = questions[answer.questionIndex];
-        const answers = randomizeAnswers ? randomizeAnswerLetters(question.answers) : question.answers;
+        const answers = question.answers;
         const status = answer.isCorrect ? '✓' : '✗';
         const statusClass = answer.isCorrect ? 'correct' : 'incorrect';
         
-        // Pokaż litery odpowiedzi (A, B, C, D)
         let userAnswerText = "Brak";
         if (Array.isArray(answer.selectedAnswer)) {
-            userAnswerText = answer.selectedAnswer.map(idx => String.fromCharCode(65 + idx)).join(', ');
+            userAnswerText = answer.selectedAnswer.map(text => text.substring(0, 50) + (text.length > 50 ? '...' : '')).join('; ');
         } else if (answer.selectedAnswer !== undefined && answer.selectedAnswer !== '') {
-            userAnswerText = String.fromCharCode(65 + answer.selectedAnswer);
+            const text = answer.selectedAnswer;
+            userAnswerText = text.substring(0, 50) + (text.length > 50 ? '...' : '');
         }
         
         let correctAnswerText = "";
         if (Array.isArray(answer.correctAnswer)) {
-            correctAnswerText = answer.correctAnswer.map(idx => String.fromCharCode(65 + idx)).join(', ');
+            correctAnswerText = answer.correctAnswer.map(idx => {
+                const text = answers[idx]?.text || '?';
+                return text.substring(0, 50) + (text.length > 50 ? '...' : '');
+            }).join('; ');
         }
         
         resultsHtml += `
@@ -573,28 +506,21 @@ function showResults() {
     updateScore();
 }
 
-// Rozpocznij quiz ponownie
 function restartQuiz() {
     quizStartModal.style.display = 'flex';
-    // Po ponownym wyborze liczby pytań quiz wystartuje przez startQuizBtn.onclick
 }
 
-// Przejrzyj pytania po zakończeniu
 function reviewQuestions() {
     currentQuestionIndex = 0;
     displayQuestion();
 }
 
-// Aktualizuj licznik punktów
 function updateScore() {
     if (scoreCounter) {
         scoreCounter.textContent = `${score} / ${questions.length}`;
     }
 }
 
-// Zmienne globalne są już zdefiniowane na początku pliku
-
-// Event listeners
 checkButton.addEventListener('click', checkAnswer);
 
 document.addEventListener('DOMContentLoaded', loadQuestions);
