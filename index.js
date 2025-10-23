@@ -104,7 +104,10 @@ function displayQuestion() {
             <p class="question-text">${question.question}</p>
             <div class="answers">
     `;
-    randomAnswers.forEach((answer, index) => {
+  
+    const answersToDisplay = answers.length === 2 ? answers.map(a => a.text) : randomAnswers;
+    
+    answersToDisplay.forEach((answer, index) => {
         let checked = '';
         if (multi && selectedAnswers && selectedAnswers.includes(answer)) {
             checked = 'checked';
@@ -123,6 +126,7 @@ function displayQuestion() {
                 answerClass = userAnswer.isCorrect ? 'user-correct' : 'user-incorrect';
             }
         }
+
         
         html += `
             <label class="answer-option ${answerClass}">
