@@ -1,0 +1,3624 @@
+{
+  "questions": [
+    {
+      "question": "Which Azure service is used for creating and deploying machine learning models?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Azure Machine Learning",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Azure Cognitive Services",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Azure Bot Service",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Azure Databricks",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "What is the primary purpose of Azure Cognitive Services?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "To provide pre-built AI models",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "To create custom machine learning models",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "To manage big data clusters",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "To host web applications",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which of the following is NOT a type of machine learning?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Supervised learning",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Unsupervised learning",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Reinforcement learning",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Predictive learning",
+          "correct": true
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "What is the main difference between supervised and unsupervised learning?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "The presence of labeled data",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "The type of algorithm used",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "The hardware requirements",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "The programming language used",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which Azure service would you use to create a chatbot?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Azure Bot Service",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Azure Cognitive Services",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Azure Functions",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Azure Logic Apps",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "What is the purpose of Azure Cognitive Search?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "To provide AI-powered search capabilities",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "To create machine learning models",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "To translate text",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "To recognize speech",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which of the following is an example of anomaly detection?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Identifying fraudulent transactions",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Categorizing customer feedback",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Translating languages",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Recognizing handwritten text",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "What is the primary goal of responsible AI?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "To ensure AI systems are ethical and trustworthy",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "To maximize AI system performance",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "To reduce the cost of AI development",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "To increase AI adoption rates",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which Azure service provides pre-built models for computer vision tasks?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Azure Computer Vision",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Azure Face",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Azure Custom Vision",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "All of the above",
+          "correct": true
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "What is the purpose of Azure Databricks?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "To provide a collaborative Apache Spark-based analytics platform",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "To create chatbots",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "To translate text",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "To host web applications",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which type of machine learning is used when you have a dataset with both features and labels?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Supervised learning",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Unsupervised learning",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Reinforcement learning",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Semi-supervised learning",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "What is the primary purpose of Azure Cognitive Services Custom Vision?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "To create custom image classification models",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "To translate text",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "To recognize speech",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "To create chatbots",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which Azure service would you use to extract key phrases from text?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Azure Text Analytics",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Azure Translator",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Azure Speech Services",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Azure Form Recognizer",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "What is the main advantage of using pre-built AI models from Azure Cognitive Services?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Reduced development time and expertise required",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Higher accuracy than custom models",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Lower cost",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Better scalability",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which of the following is NOT a pillar of Microsoft's Responsible AI principles?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Fairness",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Reliability",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Privacy and security",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Profit maximization",
+          "correct": true
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "What is the purpose of Azure Form Recognizer?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "To extract text and data from documents",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "To create custom forms",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "To recognize speech",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "To translate text",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which Azure service would you use to build a model that predicts future values based on historical time-series data?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Azure Time Series Insights",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Azure Cognitive Services",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Azure Bot Service",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Azure Databricks",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "What is the primary purpose of Azure Content Moderator?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "To detect potentially offensive or unwanted content",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "To create content",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "To translate content",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "To optimize content for search engines",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which type of machine learning algorithm is used to group similar data points together?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Clustering",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Classification",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Regression",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Reinforcement learning",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "What is the main purpose of Azure Personalizer?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "To provide personalized user experiences",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "To create custom machine learning models",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "To translate text",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "To recognize speech",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which Azure service would you use to build a model that predicts continuous numerical values?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Azure Machine Learning",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Azure Cognitive Services",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Azure Bot Service",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Azure Databricks",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "What is the primary purpose of Azure Immersive Reader?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "To improve reading comprehension",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "To create e-books",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "To translate text",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "To recognize handwritten text",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which of the following is an example of a regression problem?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Predicting house prices",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Classifying emails as spam or not spam",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Clustering customers by behavior",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Identifying objects in images",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "What is the main purpose of Azure Cognitive Services Language Understanding (LUIS)?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "To understand natural language input",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "To translate between languages",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "To generate human-like text",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "To recognize speech",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which Azure service would you use to transcribe speech to text?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Azure Speech Services",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Azure Text Analytics",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Azure Translator",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Azure Language Understanding",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "What is the primary purpose of Azure Cognitive Services Anomaly Detector?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "To detect anomalies in time series data",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "To identify objects in images",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "To translate text",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "To create chatbots",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which of the following is NOT a common application of machine learning?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Predictive maintenance",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Sentiment analysis",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Image classification",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Data encryption",
+          "correct": true
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "What is the main purpose of Azure Cognitive Services Text Analytics?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "To extract insights from text",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "To generate human-like text",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "To translate between languages",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "To recognize handwritten text",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which Azure service would you use to build a model that recommends products to users based on their past behavior?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Azure Personalizer",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Azure Bot Service",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Azure Cognitive Search",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Azure Form Recognizer",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "What is the primary purpose of Azure Cognitive Services Face API?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "To detect and analyze human faces in images",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "To generate realistic human faces",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "To recognize speech",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "To improve facial recognition in security systems",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which of the following is an example of unsupervised learning?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Customer segmentation",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Spam email detection",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Predicting stock prices",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Image classification",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "What is the main purpose of Azure Cognitive Services Translator?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "To translate text between languages",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "To transcribe speech to text",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "To generate human-like text",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "To improve reading comprehension",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which Azure service would you use to extract structured data from receipts?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Azure Form Recognizer",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Azure Computer Vision",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Azure Text Analytics",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Azure Cognitive Search",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "What is the primary purpose of Azure Machine Learning designer?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "To create machine learning models using a visual interface",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "To design user interfaces for AI applications",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "To create custom vision models",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "To design chatbots",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which of the following is NOT a feature of Azure Cognitive Services Computer Vision?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Image classification",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Object detection",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Face recognition",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Language translation",
+          "correct": true
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "What is the main purpose of Azure Cognitive Services QnA Maker?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "To create question-answering bots",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "To generate questions for surveys",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "To translate questions between languages",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "To analyze sentiment in questions",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which Azure service would you use to build a model that identifies the sentiment of customer reviews?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Azure Text Analytics",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Azure Speech Services",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Azure Translator",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Azure Form Recognizer",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "What is the primary purpose of Azure Cognitive Services Custom Speech?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "To create custom speech recognition models",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "To generate synthetic speech",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "To translate speech between languages",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "To create chatbots",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which of the following is an example of reinforcement learning?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Training a game-playing AI",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Classifying images",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Clustering customer data",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Predicting stock prices",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "What is the main purpose of Azure Cognitive Services Ink Recognizer?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "To recognize and analyze digital ink",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "To create digital signatures",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "To generate handwritten text",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "To translate handwritten text",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which Azure service would you use to build a model that predicts whether a customer will churn?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Azure Machine Learning",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Azure Cognitive Services",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Azure Bot Service",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Azure Databricks",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "What is the primary purpose of Azure Cognitive Services Speech Translation?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "To translate speech in real-time",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "To transcribe speech to text",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "To generate synthetic speech",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "To improve speech recognition accuracy",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which of the following is NOT a common evaluation metric for classification models?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Accuracy",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Precision",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Recall",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Mean Squared Error",
+          "correct": true
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "What is the main purpose of Azure Cognitive Services Video Indexer?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "To extract insights from video content",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "To create video content",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "To compress video files",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "To stream video content",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which Azure service would you use to build a model that detects anomalies in IoT sensor data?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Azure Anomaly Detector",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Azure IoT Hub",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Azure Stream Analytics",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Azure Time Series Insights",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "What is the primary purpose of Azure Cognitive Services Speaker Recognition?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "To identify and verify speakers",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "To generate synthetic speech",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "To translate speech between languages",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "To improve speech recognition accuracy",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which of the following is an example of a classification problem?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Determining whether an email is spam or not",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Predicting the price of a house",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Grouping customers by purchasing behavior",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Forecasting sales for the next quarter",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "What is the main purpose of Azure Cognitive Services Metrics Advisor?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "To detect anomalies in time series data and diagnose root causes",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "To measure the performance of AI models",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "To optimize resource allocation in Azure",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "To provide insights on website traffic",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which Azure service would you use to build a model that generates human-like text based on a given prompt?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Azure OpenAI Service",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Azure Text Analytics",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Azure Translator",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Azure Speech Services",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which Azure service is used for creating and deploying machine learning models?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Azure Machine Learning",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Azure Cognitive Services",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Azure Bot Service",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Azure Databricks",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "A company employs a team of customer service agents to provide telephone and email support to customers. The company develops a webchat bot to provide automated answers to common customer queries. Which business benefit should the company expect as a result of creating the webchat bot solution?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "increased sales",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "a reduced workload for the customer service agents",
+          "correct": true
+        },
+        {
+          "letter": "C",
+          "text": "improved product reliability",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "For a machine learning project, how should you split data for training and evaluation?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Use features for training and labels for evaluation.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Randomly split the data into rows for training and rows for evaluation.",
+          "correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Use labels for training and features for evaluation.",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Randomly split the data into columns for training and columns for evaluation.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "You build a machine learning model by using the automated machine learning user interface (UI). You need to ensure that the model meets the Microsoft transparency principle for responsible AI. What should you do?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Set Validation type to Auto.",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Enable Explain best model.",
+          "correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Set Primary metric to accuracy.",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Set Max concurrent iterations to 0.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "You are designing an AI system that empowers everyone, including people who have hearing, visual, and other impairments. This is an example of which Microsoft guiding principle for responsible AI?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "fairness",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "inclusiveness",
+          "correct": true
+        },
+        {
+          "letter": "C",
+          "text": "reliability and safety",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "accountability",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "You are building an AI system. Which task should you include to ensure that the service meets the Microsoft transparency principle for responsible AI?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Ensure that all visuals have an associated text that can be read by a screen reader.",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Enable autoscaling to ensure that a service scales based on demand.",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Provide documentation to help developers debug code.",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Ensure that a training dataset is representative of the population.",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "What are three Microsoft guiding principles for responsible AI? Each correct answer presents a complete solution. NOTE: Each correct selection is worth one point.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "knowledgeability",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "decisiveness",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "inclusiveness",
+          "correct": true
+        },
+        {
+          "letter": "D",
+          "text": "fairness",
+          "correct": true
+        },
+        {
+          "letter": "E",
+          "text": "e. opinionatedness",
+          "correct": false
+        },
+        {
+          "letter": "F",
+          "text": "f. reliability and safety",
+          "correct": true
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "You run a charity event that involves posting photos of people wearing sunglasses on Twitter. You need to ensure that you only retweet photos that meet the following requirements: - Include one or more faces. - Contain at least one person wearing sunglasses. What should you use to analyze the images?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "the Verify operation in the Face service",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "the Detect operation in the Face service",
+          "correct": true
+        },
+        {
+          "letter": "C",
+          "text": "the Describe Image operation in the Computer Vision service",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "the Analyze Image operation in the Computer Vision service",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "When you design an AI system to assess whether loans should be approved, the factors used to make the decision should be explainable. This is an example of which Microsoft guiding principle for responsible AI?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "transparency",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "inclusiveness",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "fairness",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "privacy and security",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "You are building an AI-based app. You need to ensure that the app uses the principles for responsible AI. Which two principles should you follow? Each correct answer presents part of the solution. NOTE: Each correct selection is worth one point.",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Implement an Agile software development methodology",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Implement a process of AI model validation as part of the software review process",
+          "correct": true
+        },
+        {
+          "letter": "C",
+          "text": "Establish a risk governance committee that includes members of the legal team, members of the risk management team, and a privacy officer",
+          "correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Prevent the disclosure of the use of AI-based algorithms for automated decision making",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which type of machine learning should you use to predict the number of gift cards that will be sold next month?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "classification",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "regression",
+          "correct": true
+        },
+        {
+          "letter": "C",
+          "text": "clustering",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "You have a dataset that contains information about taxi journeys that occurred during a given perioYou need to train a model to predict the fare of a taxi journey. What should you use as a feature?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "the number of taxi journeys in the dataset",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "the trip distance of individual taxi journeys",
+          "correct": true
+        },
+        {
+          "letter": "C",
+          "text": "the fare of individual taxi journeys",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "the trip ID of individual taxi journeys",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which Azure service is used for analyzing and extracting insights from large volumes of unstructured data?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Azure Cognitive Search",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Azure Synapse Analytics",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Azure Data Factory",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Azure Machine Learning",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "What Azure AI service can be used to recognize and categorize different objects in an image?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Azure Custom Vision",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Azure Face API",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Azure Computer Vision",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Azure Form Recognizer",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which type of machine learning problem involves grouping similar items together without predefined labels?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Clustering",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Classification",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Regression",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Anomaly Detection",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "In which scenario would you use Azure Anomaly Detector?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "To predict sales figures",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "To group customers based on behavior",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "To identify unusual patterns in time-series data",
+          "correct": true
+        },
+        {
+          "letter": "D",
+          "text": "To classify images into categories",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which Azure service provides capabilities for text extraction and document analysis?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Azure Form Recognizer",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Azure Computer Vision",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Azure Cognitive Search",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Azure Text Analytics",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which Azure AI service can you use to build and deploy chatbots that understand and respond to user queries?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Azure Bot Service",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Azure Cognitive Services",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Azure Custom Vision",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Azure Text Analytics",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "When creating a machine learning model for predicting customer churn, which type of model would you use?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Classification",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Regression",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Clustering",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Anomaly Detection",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which Azure AI service would you use to analyze and understand customer feedback from text data?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Azure Text Analytics",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Azure Cognitive Search",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Azure Computer Vision",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Azure Form Recognizer",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "What is the purpose of Azure Cognitive Services?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "To provide pre-built AI capabilities for apps",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "To create and manage data pipelines",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "To perform large-scale data analysis",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "To build and deploy machine learning models",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which Azure service would be appropriate for performing image recognition tasks?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Azure Custom Vision",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Azure Text Analytics",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Azure Synapse Analytics",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Azure Data Factory",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "What type of machine learning model is suitable for predicting future values based on historical data?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Regression",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Classification",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Clustering",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Anomaly Detection",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which Azure AI service is used to perform entity extraction and sentiment analysis on text?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Azure Text Analytics",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Azure Cognitive Search",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Azure Form Recognizer",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Azure Computer Vision",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "For an AI system to meet the Microsoft principle of fairness, it should ensure that:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Decisions are made without bias",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "The system is transparent and explainable",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "It provides comprehensive documentation",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "The system is scalable and efficient",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which Azure service helps to create models that detect objects and faces in images?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Azure Computer Vision",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Azure Face API",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Azure Form Recognizer",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Azure Custom Vision",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which Azure AI service is best suited for analyzing large amounts of textual data for key phrases and sentiment?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Azure Text Analytics",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Azure Cognitive Search",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Azure Form Recognizer",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Azure Custom Vision",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "What principle of responsible AI ensures that AI systems are designed to be inclusive of all individuals?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Inclusiveness",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Transparency",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Accountability",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Reliability and Safety",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which Azure AI service can be used for recognizing and analyzing handwritten text?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Azure Computer Vision",
+          "correct": false
+        },
+        {
+          "letter": "B",
+          "text": "Azure Text Analytics",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Azure Form Recognizer",
+          "correct": true
+        },
+        {
+          "letter": "D",
+          "text": "Azure Cognitive Search",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "When building a model to classify customer feedback into positive, neutral, or negative categories, which type of machine learning task are you performing?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Classification",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Regression",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Clustering",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Anomaly Detection",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which Azure AI service is used to analyze and interpret forms and documents, including extracting structured data from them?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Azure Form Recognizer",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Azure Computer Vision",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Azure Text Analytics",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Azure Cognitive Search",
+          "correct": false
+        },
+        {
+          "letter": "E",
+          "text": "Azure Form Recognizer",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "What is the purpose of using Azure Anomaly Detector in a time-series analysis?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "To identify unusual patterns and deviations",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "To classify data into predefined categories",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "To group similar items together",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "To predict future values based on historical data",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which Azure service would you use to build a model that recognizes entities such as names, locations, and organizations in text?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Azure Text Analytics",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Azure Computer Vision",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Azure Cognitive Search",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Azure Form Recognizer",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "For an AI system to be accountable, it should include:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Clear documentation and traceability",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Automatic scaling based on demand",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Predefined rules for classification",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Custom vision model training",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which Azure AI service provides tools for analyzing images and extracting text, objects, and scene information?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Azure Computer Vision",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Azure Cognitive Search",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Azure Text Analytics",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Azure Custom Vision",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which type of machine learning task is used to detect anomalies in system logs or sensor data?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Anomaly Detection",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Classification",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Regression",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Clustering",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "What is the purpose of using Azure Cognitive Services for image analysis?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "To recognize objects, faces, and text within images",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "To predict future sales based on historical data",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "To analyze sentiment in customer feedback",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "To build and deploy chatbots",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which Azure service is used to build, train, and deploy custom machine learning models?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Azure Machine Learning",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Azure Cognitive Search",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Azure Bot Service",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Azure Data Factory",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "In a machine learning model, what is the purpose of feature engineering?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "To prepare and select the most relevant data for the model",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "To train the model using labeled data",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "To split data into training and testing sets",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "To evaluate the model's performance",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which Azure AI service would you use to build a recommendation engine for suggesting products to customers?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Azure Machine Learning",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Azure Cognitive Search",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Azure Bot Service",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Azure Form Recognizer",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which Azure service provides pre-built models for recognizing and analyzing text from images?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Azure Computer Vision",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Azure Text Analytics",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Azure Cognitive Search",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Azure Custom Vision",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which type of machine learning problem is used to group similar data points into clusters without predefined categories?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Clustering",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Classification",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Regression",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Anomaly Detection",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "When using Azure Text Analytics, which feature allows you to analyze the sentiment of customer reviews?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Sentiment Analysis",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Entity Recognition",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Key Phrase Extraction",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Language Detection",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "What principle of responsible AI focuses on ensuring that AI systems are transparent and explainable?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Transparency",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Inclusiveness",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Fairness",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Accountability",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which Azure AI service can be used to create a chatbot that can engage with users in natural language?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Azure Bot Service",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Azure Cognitive Search",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Azure Custom Vision",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Azure Form Recognizer",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which type of machine learning model would be appropriate for predicting the price of a house based on various features?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Regression",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Classification",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Clustering",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Anomaly Detection",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "What is the key benefit of using Azure Cognitive Services for AI tasks?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Pre-built models for quick deployment",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Custom model training",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Data pipeline management",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Large-scale data analysis",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "In which Azure service can you train and evaluate custom vision models to recognize specific objects?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Azure Custom Vision",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Azure Machine Learning",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Azure Cognitive Search",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Azure Computer Vision",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which Azure AI service is used for extracting text from scanned documents and images?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Azure Form Recognizer",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Azure Text Analytics",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Azure Cognitive Search",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Azure Custom Vision",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "What is the main goal of anomaly detection in a machine learning context?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "To identify outliers or unusual patterns in data",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "To classify data into predefined categories",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "To predict future trends based on historical data",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "To group similar items together",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which Azure service provides capabilities for text sentiment analysis and language detection?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Azure Text Analytics",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Azure Cognitive Search",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Azure Form Recognizer",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Azure Computer Vision",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "For an AI system to be fair, it should ensure that:",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "All individuals are treated equally and without bias",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "The system is transparent and explainable",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "It includes comprehensive documentation",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "The system is scalable and efficient",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which Azure AI service can be used to detect faces and identify attributes such as age and emotion?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Azure Face API",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Azure Computer Vision",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Azure Form Recognizer",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Azure Custom Vision",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "When analyzing customer reviews with Azure Text Analytics, what feature helps in identifying and categorizing key phrases?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Key Phrase Extraction",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Sentiment Analysis",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Entity Recognition",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Language Detection",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which Azure service is used to manage and monitor the deployment of machine learning models?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Azure Machine Learning",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Azure Cognitive Services",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Azure Bot Service",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Azure Databricks",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "What Azure service is suitable for analyzing large volumes of text to identify sentiment, key phrases, and entities?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Azure Text Analytics",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Azure Cognitive Search",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Azure Computer Vision",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Azure Form Recognizer",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "In machine learning, what is the purpose of cross-validation?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "To assess the model's performance on different subsets of data",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "To split data into training and testing sets",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "To preprocess and clean the data",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "To tune hyperparameters of the model",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which Azure service can be used to build a system that detects and recognizes handwritten text?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Azure Form Recognizer",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Azure Computer Vision",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Azure Text Analytics",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Azure Custom Vision",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "What type of machine learning algorithm would you use to group similar customers based on their purchasing behavior?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Clustering",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Classification",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Regression",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Anomaly Detection",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which Azure AI service allows you to create conversational AI experiences with pre-built models for intent recognition and dialog management?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Azure Bot Service",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Azure Cognitive Search",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Azure Custom Vision",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Azure Form Recognizer",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "What is the main benefit of using Azure Cognitive Services for AI tasks?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Access to pre-built AI models and APIs",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Ability to create custom machine learning models",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Management of large-scale data pipelines",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Execution of complex data transformations",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which Azure service would be appropriate for analyzing and interpreting images to detect objects and their locations?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Azure Computer Vision",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Azure Custom Vision",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Azure Form Recognizer",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Azure Text Analytics",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "What principle of responsible AI ensures that the AI system can be audited and reviewed for fairness and accountability?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Accountability",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Transparency",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Fairness",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Reliability and Safety",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "When using Azure Anomaly Detector, what kind of data is best suited for analysis?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Time-series data",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Categorical data",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Image data",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Text data",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which Azure service can you use to train a custom vision model to recognize specific types of objects in images?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Azure Custom Vision",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Azure Computer Vision",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Azure Text Analytics",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Azure Cognitive Search",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which Azure AI service is best for recognizing faces and their attributes, such as age, emotion, and gender?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Azure Face API",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Azure Computer Vision",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Azure Form Recognizer",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Azure Custom Vision",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "What is the purpose of using feature scaling in a machine learning model?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "To normalize the range of features for better model performance",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "To increase the complexity of the model",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "To split data into training and testing sets",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "To assess the model's performance on different subsets of data",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which Azure AI service provides tools for text extraction and document analysis, including extracting structured data from forms?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Azure Form Recognizer",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Azure Computer Vision",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Azure Text Analytics",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Azure Cognitive Search",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which type of machine learning model would you use to forecast future sales based on historical data?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Regression",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Classification",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Clustering",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Anomaly Detection",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "In a machine learning context, what is the purpose of hyperparameter tuning?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "To optimize the model's performance by adjusting its parameters",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "To preprocess and clean the data",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "To split data into training and testing sets",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "To assess the model's performance on different subsets of data",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "What is the main advantage of using Azure Cognitive Services for AI tasks?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Pre-built models that accelerate development",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Custom model training and deployment",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Large-scale data processing",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Complex data transformation capabilities",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which Azure service provides capabilities for analyzing images and extracting insights such as text and objects?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Azure Computer Vision",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Azure Custom Vision",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Azure Form Recognizer",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Azure Text Analytics",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which Azure AI service can be used to perform text sentiment analysis and extract key phrases from customer feedback?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Azure Text Analytics",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Azure Cognitive Search",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Azure Form Recognizer",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Azure Computer Vision",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "What type of machine learning task would you use to group customers based on their purchasing patterns?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Clustering",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Classification",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Regression",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Anomaly Detection",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which Azure service provides tools for building and deploying chatbots that understand natural language?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Azure Bot Service",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Azure Cognitive Search",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Azure Custom Vision",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Azure Form Recognizer",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "What is the main goal of using Azure Anomaly Detector in time-series data analysis?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "To identify unusual patterns or deviations",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "To classify data into categories",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "To group similar data points",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "To predict future values based on historical data",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which Azure AI service can be used to recognize objects and scenes in images and provide a description of them?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Azure Computer Vision",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Azure Custom Vision",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Azure Text Analytics",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Azure Form Recognizer",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which Azure service would you use for building, training, and deploying machine learning models in a managed environment?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Azure Machine Learning",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Azure Cognitive Services",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Azure Bot Service",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Azure Synapse Analytics",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "What principle of responsible AI ensures that AI systems are designed to be inclusive and accessible to all users?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Inclusiveness",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Transparency",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Fairness",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Accountability",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "In machine learning, what is the purpose of cross-validation?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "To assess the model's performance on different subsets of data",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "To split data into training and testing sets",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "To preprocess and clean the data",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "To tune hyperparameters of the model",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which Azure service provides capabilities for analyzing text data to extract entities such as names, locations, and organizations?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Azure Text Analytics",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Azure Cognitive Search",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Azure Form Recognizer",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Azure Computer Vision",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "When building a machine learning model to predict customer churn, which type of model would you use?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Classification",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Regression",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Clustering",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Anomaly Detection",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "What Azure service is used to create custom machine learning models for tasks such as image recognition and text analysis?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Azure Machine Learning",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Azure Cognitive Services",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Azure Custom Vision",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Azure Form Recognizer",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which Azure AI service can be used to analyze and extract information from forms and documents, including text and structured data?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Azure Form Recognizer",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Azure Computer Vision",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Azure Text Analytics",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Azure Cognitive Search",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "In the context of Azure AI, what is the primary purpose of feature extraction?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "To identify and select important features from raw data for model training",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "To evaluate model performance",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "To split data into training and testing sets",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "To preprocess and clean the data",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which Azure AI service is used to analyze and interpret large amounts of image data for tasks such as object detection and scene understanding?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Azure Computer Vision",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Azure Custom Vision",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Azure Form Recognizer",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Azure Text Analytics",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which Azure service provides tools for analyzing and extracting insights from time-series data, including detecting anomalies?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Azure Anomaly Detector",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Azure Machine Learning",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Azure Cognitive Search",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Azure Text Analytics",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "What principle of responsible AI emphasizes the need for AI systems to be safe and reliable?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Reliability and Safety",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Transparency",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Fairness",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Inclusiveness",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "Which Azure AI service allows you to build custom models to recognize specific types of objects in images?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Azure Custom Vision",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Azure Computer Vision",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Azure Text Analytics",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Azure Cognitive Search",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    },
+    {
+      "question": "What is the primary benefit of using Azure Cognitive Services for AI tasks?",
+      "answers": [
+        {
+          "letter": "A",
+          "text": "Access to pre-built models and APIs",
+          "correct": true
+        },
+        {
+          "letter": "B",
+          "text": "Custom model training",
+          "correct": false
+        },
+        {
+          "letter": "C",
+          "text": "Large-scale data processing",
+          "correct": false
+        },
+        {
+          "letter": "D",
+          "text": "Complex data transformations",
+          "correct": false
+        }
+      ],
+      "category": "ogólne"
+    }
+  ],
+  "total_questions": 139
+}
