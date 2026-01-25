@@ -18,8 +18,12 @@ const questionCountInput = document.getElementById('questionCountInput');
 const startQuizBtn = document.getElementById('startQuizBtn');
 const quickSelect = document.getElementById('quickSelect');
 const quizSelect = document.getElementById('quizSelect');
+const quizFileInput = document.getElementById('quizFileInput');
+const uploadQuizBtn = document.getElementById('uploadQuizBtn');
+const uploadStatus = document.getElementById('uploadStatus');
 
 let checkedQuestions = [];
+let configHandlersAttached = false;
 
 function getRandomQuestions(arr, n) {
     const shuffled = arr.slice().sort(() => 0.5 - Math.random());
@@ -50,24 +54,91 @@ async function loadQuestions() {
                 questionCountInput.value = btn.dataset.n;
             };
         });
-        quizStartModal.style.display = 'flex'; 
-        quizSelect.onchange = () => {
-            loadQuestions();
-        };
-        
-        startQuizBtn.onclick = () => {
-            let val = parseInt(questionCountInput.value);
-            if (isNaN(val) || val < 1 || val > allQuestions.length) {
-                alert('Podaj liczbę od 1 do ' + allQuestions.length);
-                return;
+        quizStartModal.style.display = 'flex';
+        if (!configHandlersAttached) {
+            quizSelect.onchange = () => {
+                loadQuestions();
+            };
+            startQuizBtn.onclick = () => {
+                let val = parseInt(questionCountInput.value);
+                if (isNaN(val) || val < 1 || val > allQuestions.length) {
+                    alert('Podaj liczbę od 1 do ' + allQuestions.length);
+                    return;
+                }
+                QUESTIONS_PER_QUIZ = val;
+                quizStartModal.style.display = 'none';
+                startQuiz();
+            };
+            if (uploadQuizBtn) {
+                uploadQuizBtn.onclick = () => {
+                    uploadQuizFile();
+                };
             }
-            QUESTIONS_PER_QUIZ = val;
-            quizStartModal.style.display = 'none';
-            startQuiz();
-        };
+            configHandlersAttached = true;
+        }
     } catch (error) {
         questionsContainer.innerHTML = '<p>Błąd podczas wczytywania pytań. Sprawdź czy plik istnieje.</p>';
     }
+}
+
+async function loadQuizList(selectedFilename = null) {
+    try {
+        const response = await fetch('/api/quizzes');
+        const data = await response.json();
+        if (!data.quizzes || data.quizzes.length === 0) {
+            return;
+        }
+        quizSelect.innerHTML = data.quizzes
+            .map(q => `<option value="${q.filename}">${q.label}</option>`)
+            .join('');
+        if (selectedFilename) {
+            const exists = data.quizzes.some(q => q.filename === selectedFilename);
+            if (exists) {
+                quizSelect.value = selectedFilename;
+            }
+        }
+    } catch (error) {
+        // Keep existing options if the API is unavailable
+    }
+}
+
+async function uploadQuizFile() {
+    if (!quizFileInput || !quizFileInput.files || quizFileInput.files.length === 0) {
+        setUploadStatus('Wybierz plik .xlsx.', true);
+        return;
+    }
+    const file = quizFileInput.files[0];
+    if (!file.name.toLowerCase().endsWith('.xlsx')) {
+        setUploadStatus('Dozwolone są tylko pliki .xlsx.', true);
+        return;
+    }
+    setUploadStatus('Wgrywanie pliku...', false);
+    const formData = new FormData();
+    formData.append('file', file);
+
+    try {
+        const response = await fetch('/api/upload-xlsx', {
+            method: 'POST',
+            body: formData
+        });
+        const data = await response.json();
+        if (!response.ok) {
+            setUploadStatus(data.error || 'Błąd podczas uploadu.', true);
+            return;
+        }
+        await loadQuizList(data.filename);
+        quizFileInput.value = '';
+        setUploadStatus(`Dodano: ${data.label} (${data.total_questions} pytań)`, false);
+        await loadQuestions();
+    } catch (error) {
+        setUploadStatus('Nie udało się połączyć z serwerem.', true);
+    }
+}
+
+function setUploadStatus(message, isError) {
+    if (!uploadStatus) return;
+    uploadStatus.textContent = message;
+    uploadStatus.style.color = isError ? '#b00020' : '#2e7d32';
 }
 
 function startQuiz() {
@@ -527,7 +598,10 @@ function updateScore() {
 
 checkButton.addEventListener('click', checkAnswer);
 
-document.addEventListener('DOMContentLoaded', loadQuestions);
+document.addEventListener('DOMContentLoaded', async () => {
+    await loadQuizList();
+    await loadQuestions();
+});
 
 function isMultiSelect(question) {
     return question.answers.filter(a => a.correct).length > 1;

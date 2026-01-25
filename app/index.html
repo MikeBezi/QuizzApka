@@ -26,10 +26,17 @@
             <div class="quiz-selection">
                 <label for="quizSelect">Wybierz zestaw pytań:</label>
                 <select id="quizSelect">
-                    <option value="az900.json">AZ-900 (Azure Fundamentals)</option>
-                    <option value="sc900.json">SC-900 (Security, Compliance)</option>
-                    <option value="ai900.json">AI-900 (AI Fundamentals)</option>
+                    <option value="data/json/az900.json">AZ-900 (Azure Fundamentals)</option>
+                    <option value="data/json/sc900.json">SC-900 (Security, Compliance)</option>
+                    <option value="data/json/ai900.json">AI-900 (AI Fundamentals)</option>
                 </select>
+            </div>
+
+            <div class="quiz-upload">
+                <label for="quizFileInput">Dodaj własny plik .xlsx:</label>
+                <input type="file" id="quizFileInput" accept=".xlsx">
+                <button id="uploadQuizBtn" type="button">Wgraj i dodaj</button>
+                <div id="uploadStatus" class="upload-status"></div>
             </div>
             
             <h3>Liczba pytań</h3>
