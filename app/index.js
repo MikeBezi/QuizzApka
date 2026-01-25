@@ -50,8 +50,15 @@ async function loadQuestions() {
         allQuestions = data.questions;
         questionCountInput.max = allQuestions.length;
         questionCountInput.value = Math.min(30, allQuestions.length);
-        const quickOptions = [1, 30, 60, 90, 120, 150, 180, 210].filter(n => n <= allQuestions.length);
-        quickSelect.innerHTML = quickOptions.map(n => `<button class='quick-btn' data-n='${n}'>${n}</button>`).join(' ');
+        const baseOptions = [1, 30, 60, 90, 120, 150, 180, 210];
+        const maxQuestions = allQuestions.length;
+        const quickOptions = baseOptions.filter(n => n <= maxQuestions);
+        if (!quickOptions.includes(maxQuestions)) {
+            quickOptions.push(maxQuestions);
+        }
+        quickSelect.innerHTML = quickOptions
+            .map(n => `<button class='quick-btn' data-n='${n}'>${n}</button>`)
+            .join(' ');
         quickSelect.querySelectorAll('button').forEach(btn => {
             btn.onclick = () => {
                 questionCountInput.value = btn.dataset.n;
