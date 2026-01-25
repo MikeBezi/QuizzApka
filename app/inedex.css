@@ -339,6 +339,47 @@ h1 {
     background: #f8f9ff;
     border-radius: 10px;
 }
+.upload-open-btn {
+    margin-top: 12px;
+    width: 100%;
+    background: #eef1ff;
+    color: #223366;
+    border: 1px solid #667eea;
+    border-radius: 8px;
+    font-size: 0.95em;
+    cursor: pointer;
+    padding: 10px 14px;
+    transition: all 0.2s;
+}
+.upload-open-btn:hover {
+    background: #667eea;
+    color: #fff;
+}
+.upload-modal {
+    min-width: 360px;
+}
+.quiz-upload {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px 0 15px;
+}
+.upload-status {
+    font-size: 0.9em;
+}
+.upload-close-btn {
+    background: #f1f1f1;
+    color: #333;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.95em;
+    cursor: pointer;
+    padding: 10px 16px;
+    transition: background 0.2s;
+}
+.upload-close-btn:hover {
+    background: #e2e2e2;
+}
 .quiz-selection label {
     display: block;
     font-size: 1.1em;

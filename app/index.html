@@ -30,19 +30,25 @@
                     <option value="data/json/sc900.json">SC-900 (Security, Compliance)</option>
                     <option value="data/json/ai900.json">AI-900 (AI Fundamentals)</option>
                 </select>
-            </div>
-
-            <div class="quiz-upload">
-                <label for="quizFileInput">Dodaj własny plik .xlsx:</label>
-                <input type="file" id="quizFileInput" accept=".xlsx">
-                <button id="uploadQuizBtn" type="button">Wgraj i dodaj</button>
-                <div id="uploadStatus" class="upload-status"></div>
+                <button id="openUploadModal" type="button" class="upload-open-btn">Dodaj własny plik</button>
             </div>
             
             <h3>Liczba pytań</h3>
             <div id="quickSelect"></div>
             <input type="number" id="questionCountInput" min="1" value="30" step="1">
             <button id="startQuizBtn">Rozpocznij quiz</button>
+        </div>
+    </div>
+    <div id="uploadModal" class="modal" style="display: none;">
+        <div class="modal-content upload-modal">
+            <h2>Dodaj własny plik</h2>
+            <div class="quiz-upload">
+                <label for="quizFileInput">Plik .xlsx:</label>
+                <input type="file" id="quizFileInput" accept=".xlsx">
+                <button id="uploadQuizBtn" type="button">Wgraj i dodaj</button>
+                <div id="uploadStatus" class="upload-status"></div>
+            </div>
+            <button id="closeUploadModal" type="button" class="upload-close-btn">Zamknij</button>
         </div>
     </div>
     <script src="index.js"></script>

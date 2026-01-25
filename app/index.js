@@ -21,6 +21,9 @@ const quizSelect = document.getElementById('quizSelect');
 const quizFileInput = document.getElementById('quizFileInput');
 const uploadQuizBtn = document.getElementById('uploadQuizBtn');
 const uploadStatus = document.getElementById('uploadStatus');
+const openUploadModal = document.getElementById('openUploadModal');
+const uploadModal = document.getElementById('uploadModal');
+const closeUploadModal = document.getElementById('closeUploadModal');
 
 let checkedQuestions = [];
 let configHandlersAttached = false;
@@ -74,6 +77,20 @@ async function loadQuestions() {
                     uploadQuizFile();
                 };
             }
+            if (openUploadModal && uploadModal) {
+                openUploadModal.onclick = () => {
+                    uploadModal.style.display = 'flex';
+                };
+            }
+            if (closeUploadModal && uploadModal) {
+                closeUploadModal.onclick = () => {
+                    uploadModal.style.display = 'none';
+                    if (quizFileInput) {
+                        quizFileInput.value = '';
+                    }
+                    setUploadStatus('', false);
+                };
+            }
             configHandlersAttached = true;
         }
     } catch (error) {
@@ -89,7 +106,10 @@ async function loadQuizList(selectedFilename = null) {
             return;
         }
         quizSelect.innerHTML = data.quizzes
-            .map(q => `<option value="${q.filename}">${q.label}</option>`)
+            .map(q => {
+                const count = typeof q.total_questions === 'number' ? ` - ${q.total_questions}` : '';
+                return `<option value="${q.filename}">${q.label}${count}</option>`;
+            })
             .join('');
         if (selectedFilename) {
             const exists = data.quizzes.some(q => q.filename === selectedFilename);
@@ -130,6 +150,9 @@ async function uploadQuizFile() {
         quizFileInput.value = '';
         setUploadStatus(`Dodano: ${data.label} (${data.total_questions} pytań)`, false);
         await loadQuestions();
+        if (uploadModal) {
+            uploadModal.style.display = 'none';
+        }
     } catch (error) {
         setUploadStatus('Nie udało się połączyć z serwerem.', true);
     }

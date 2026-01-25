@@ -1,4 +1,5 @@
 import os
+import json
 from flask import Flask, request, jsonify, send_from_directory
 from werkzeug.utils import secure_filename
 
@@ -95,9 +96,19 @@ def upload_xlsx():
 def list_quizzes():
     items = []
     for filename in list_json_files():
+        total_questions = None
+        file_path = os.path.join(JSON_DIR, filename)
+        try:
+            with open(file_path, "r", encoding="utf-8") as handle:
+                payload = json.load(handle)
+                if isinstance(payload, dict) and isinstance(payload.get("questions"), list):
+                    total_questions = len(payload["questions"])
+        except (OSError, json.JSONDecodeError):
+            total_questions = None
         items.append({
             "filename": f"data/json/{filename}",
-            "label": build_label(filename)
+            "label": build_label(filename),
+            "total_questions": total_questions
         })
     return jsonify({"quizzes": items})
 
